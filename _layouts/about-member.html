@@ -86,6 +86,20 @@ layout: default
                     </a>
                     {% endif %}
 
+                    {% if member.usernames.soundcloud %}
+                    <a class="social-link"
+                       href="https://soundcloud.com/{{ member.usernames.soundcloud }}">
+                        <i class="fab fa-soundcloud"></i>
+                    </a>
+                    {% endif %}
+
+                    {% if member.usernames.spotify %}
+                    <a class="social-link"
+                       href="https://open.spotify.com/user/{{ member.usernames.spotify }}">
+                        <i class="fab fa-spotify"></i>
+                    </a>
+                    {% endif %}
+
                     {% if member.usernames.github %}
                     <a class="social-link"
                        href="http://github.com/{{ member.usernames.github }}">
