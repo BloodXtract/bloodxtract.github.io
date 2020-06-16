@@ -21,6 +21,9 @@ layout: default
             {% if member.usernames.github %}
                 {%- include github_follow_button.html -%}
             {% endif %}
+            {% if member.usernames.twitter %}
+                {%- include twitter_follow_button.html -%}
+            {% endif %}
 
                 <p class="profile-links">
                     {% if member.usernames.discord %}
