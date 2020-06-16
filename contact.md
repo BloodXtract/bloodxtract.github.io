@@ -1,6 +1,17 @@
 ---
 title: Contact
 menus: header
-layout: contact
+layout: default
 permalink: /contact/
 ---
+
+<div class="row">
+    <div class="col-lg-6 offset-md-3">
+        <div class="card">
+                <h1 class="card-title"> Contact Me </h1>
+                 {%- include contact_me_form.html -%}
+             </div>
+    </div>
+</div>
+
+

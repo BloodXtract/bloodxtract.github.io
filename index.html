@@ -1,3 +1,19 @@
 ---
-layout: home
+layout: default
 ---
+
+<script>
+  $(document).ready(function() {
+    $("#typewriteText").typewrite({
+      actions: [{ type: "{{site.home.typewrite-text}}" }]
+    });
+  });
+</script>
+<div class="jumbotron home" style="text-align: center; background-image: url('{{ site.home.jumbotron-background }}')">
+    <p class="heading">{{ site.title }}</p>
+    <p class="lead" id="typewriteText"></p>
+</div>
+<div class="col-lg-8 offset-md-2">
+    <section>
+    </section>
+</div>
