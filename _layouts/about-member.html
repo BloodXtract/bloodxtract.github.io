@@ -65,6 +65,13 @@ layout: default
                     </a>
                     {% endif %}
 
+                    {% if member.usernames.snapchat %}
+                    <a class="social-link"
+                       href="http://www.snapchat.com/add/{{ member.usernames.snapchat }}">
+                        <i class="fab fa-snapchat-ghost"></i>
+                    </a>
+                    {% endif %}
+
                     {% if member.usernames.instagram %}
                     <a class="social-link"
                        href="http://instagram.com/{{ member.usernames.instagram }}">
