@@ -1,13 +1,23 @@
 {
   "TehGM": {
     "name": "TehGM",
+    "core": true,
     "avatar": "/assets/img/avatars/tehgm.png",
     "email": "tehgm@bloodxtract.com",
     "website": "https://tehgm.net",
-    "short_description": "",
     "usernames": {
       "github": "TehGM",
       "buymeacoffee": "TehGM"
     }
+  },
+  "BornToLose": {
+    "name": "Born to Lose",
+    "avatar": "https://cdn.discordapp.com/avatars/386245029943050251/267d40702d1b28f7cc8b730ee812129a.png?size=512",
+    "email": "borntolose@bloodxtract.com"
+  },
+  "Tajniak": {
+    "name": "Tajniak",
+    "avatar": "https://cdn.discordapp.com/avatars/377903467676696577/afb334271aa3b3dd1dcff62d1217df41.png?size=512",
+    "email": "tajniak@bloodxtract.com"
   }
 }

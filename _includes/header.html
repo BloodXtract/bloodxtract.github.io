@@ -6,12 +6,29 @@
     <a class="navbar-brand" href="/">{{site.title}}</a>
     <div class="collapse navbar-collapse" id="navbarNav">
         <ul class="navbar-nav">
-            {% for i in site.urls %}
             <li class="nav-item">
-                <a class="nav-link"
-                   href="{{ site.url}}{{site.baseurl}}{{ i.url }}">{{ i.text }}</a>
+                <a class="nav-link" href="/games">Games We Play</a>
             </li>
-            {% endfor %}
+            <li class="nav-item dropdown">
+                <a class="nav-link" role="button" href="#" id="membersDropdownMenuButton"
+                   data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Members
+                </a>
+                <div class="dropdown-menu" aria-labelledby="membersDropdownMenuButton">
+                    <a class="dropdown-item" href="/members/TehGM">TehGM</a>
+                    <a class="dropdown-item" href="/members/BornToLose">Born to Lose</a>
+                    <a class="dropdown-item" href="/members/Tajniak">Tajniak</a>
+                </div>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="/blog">Blog</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="/gallery">Gallery</a>
+            </li>
+            <!--<li class="nav-item">
+                <a class="nav-link" href="/contact">Contact Us</a>
+            </li>-->
         </ul>
     </div>
     <ul class="nav justify-content-end">
