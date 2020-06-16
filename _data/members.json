@@ -7,16 +7,13 @@
     "website": "https://tehgm.net",
     "usernames": {
       "github": "TehGM",
-      "steam": "TehGM",
+      "steam_id": "TehGM",
       "twitch": "tehgm",
       "buymeacoffee": "TehGM",
       "discord": 247081094799687682,
       "youtube_custom": "tehgm",
-      "itch": "tehgm",
       "playstation": "Teh_GM",
-      "reddit": "TehGM",
-      "soundcloud": "tehgm",
-      "spotify": "11159602927"
+      "reddit": "TehGM"
     }
   },
   "BornToLose": {
@@ -24,7 +21,8 @@
     "avatar": "https://cdn.discordapp.com/avatars/386245029943050251/267d40702d1b28f7cc8b730ee812129a.png?size=512",
     "email": "borntolose@bloodxtract.com",
     "usernames": {
-      "discord": 386245029943050251
+      "discord": 386245029943050251,
+      "steam_id": "hlofriendo"
     }
   },
   "Tajniak": {
@@ -33,7 +31,8 @@
     "email": "tajniak@bloodxtract.com",
     "usernames": {
       "github": "MarcinK-ski",
-      "discord": 377903467676696577
+      "discord": 377903467676696577,
+      "steam": 76561197998228588
     }
   }
 }
