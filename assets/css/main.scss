@@ -6,3 +6,25 @@
 @import "devlopr";
 
 /* custom css goes below */
+
+.jumbotron {
+    @extend .jumbotron;
+    background-color: var(--card-background-color);
+}
+
+.jumbotron.home {
+    height: 550px;
+    padding: 13.5rem 2rem;
+}
+
+.jumbotron.home .heading {
+    font-size: 90px;
+    padding-bottom: 2rem;
+}
+
+footer {
+    position: fixed;
+    bottom: 0;
+    font-size: 16px;
+    max-height: 55px;
+}
