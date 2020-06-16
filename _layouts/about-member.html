@@ -30,9 +30,14 @@ layout: default
                     </a>
                     {% endif %}
 
-                    {% if member.usernames.steam %}
+                    {% if member.usernames.steam_id %}
                     <a class="social-link"
-                       href="https://steamcommunity.com/id/{{ member.usernames.steam }}">
+                       href="https://steamcommunity.com/id/{{ member.usernames.steam_id }}">
+                        <i class="fab fa-steam"></i>
+                    </a>
+                    {% elsif member.usernames.steam %}
+                    <a class="social-link"
+                       href="https://steamcommunity.com/profiles/{{ member.usernames.steam }}">
                         <i class="fab fa-steam"></i>
                     </a>
                     {% endif %}
