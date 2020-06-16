@@ -2,38 +2,37 @@
 layout: default
 ---
 
-<div class="row" id="blog-post-container">
-    <div class="col-lg-8 offset-md-2">
-        {%- include blog_post_article.html -%}
-        {%- include blog_post_comments.html-%}
+{% assign author = site.data.members[page.author] %}
+
+<div class="col-lg-7 col-center">
+    <div class="row" id="blog-post-container">
+            {%- include blog_post_article.html -%}
+            {%- include blog_post_comments.html-%}
     </div>
-</div>
-<div class="row">
-    <div class="col-md-4">
-        <div class="card">
-            <div class="card-header">About {{page.author}}</div>
-            <div class="card-body">
-                <p class="author_bio">{{ page.author_bio }}</p>
+    <div class="row">
+        <div class="col-md-7">
+            <div class="card about-author">
+                <div>
+                    {% if author.avatar %}
+                    <img src="{{ author.avatar }}" class="profile-img" />
+                    {% else %}
+                    <img src="/assets/img/avatars/default_avatar.png" class="profile-img" />
+                    {% endif %}
+                </div>
+                <div class="author-info">
+                    <div class="card-header">Author: <a href="/members/{{page.author}}">{{author.name}}</a></div>
+                    <div class="card-body">
+                        <p class="author_bio">{{ author.short_description }}</p>
+                    </div>
+                </div>
             </div>
         </div>
-    </div>
-    <div class="col-md-4">
-        <div class="card">
-            <div class="card-header">Categories</div>
-            <div class="card-body text-dark">
-                {%- include blog_categories.html -%}
-            </div>
-        </div>
-    </div>
-    <div class="col-md-4">
-        <div class="card">
-            <div class="card-header">Useful Links</div>
-            <div class="card-body text-dark">
-                {% for i in site.urls %}
-                <li>
-                    <a href="{{ site.url}}{{site.baseurl}}{{ i.url }}">{{ i.text }}</a>
-                </li>
-                {% endfor %}
+        <div class="col-md-5">
+            <div class="card">
+                <div class="card-header">Categories</div>
+                <div class="card-body text-dark">
+                    {%- include blog_categories.html -%}
+                </div>
             </div>
         </div>
     </div>
