@@ -37,6 +37,13 @@ layout: default
                     </a>
                     {% endif %}
 
+                    {% if member.usernames.twitch %}
+                    <a class="social-link"
+                       href="https://www.twitch.tv/{{ member.usernames.twitch }}">
+                        <i class="fab fa-twitch"></i>
+                    </a>
+                    {% endif %}
+
                     {% if member.usernames.itch %}
                     <a class="social-link"
                        href="http://{{ member.usernames.itch }}.itch.io">
