@@ -37,6 +37,20 @@ layout: default
                     </a>
                     {% endif %}
 
+                    {% if member.usernames.playstation %}
+                    <a class="social-link"
+                       href="https://my.playstation.com/profile/{{ member.usernames.playstation }}">
+                        <i class="fab fa-playstation"></i>
+                    </a>
+                    {% endif %}
+
+                    {% if member.usernames.reddit %}
+                    <a class="social-link"
+                       href="https://www.reddit.com/user/{{ member.usernames.reddit }}">
+                        <i class="fab fa-reddit-alien"></i>
+                    </a>
+                    {% endif %}
+
                     {% if member.usernames.twitch %}
                     <a class="social-link"
                        href="https://www.twitch.tv/{{ member.usernames.twitch }}">
@@ -63,24 +77,10 @@ layout: default
                     </a>
                     {% endif %}
 
-                    {% if member.usernames.playstation %}
-                    <a class="social-link"
-                       href="https://my.playstation.com/profile/{{ member.usernames.playstation }}">
-                        <i class="fab fa-playstation"></i>
-                    </a>
-                    {% endif %}
-
                     {% if member.usernames.twitter %}
                     <a class="social-link"
                        href="http://twitter.com/{{ member.usernames.twitter }}">
                         <i class="fab fa-twitter"></i>
-                    </a>
-                    {% endif %}
-
-                    {% if member.usernames.reddit %}
-                    <a class="social-link"
-                       href="https://www.reddit.com/user/{{ member.usernames.reddit }}">
-                        <i class="fab fa-reddit-alien"></i>
                     </a>
                     {% endif %}
 
@@ -126,24 +126,10 @@ layout: default
                     </a>
                     {% endif %}
 
-                    {% if member.usernames.github %}
-                    <a class="social-link"
-                       href="http://github.com/{{ member.usernames.github }}">
-                        <i class="fab fa-github"></i>
-                    </a>
-                    {% endif %}
-
                     {% if member.usernames.behance %}
                     <a class="social-link"
                        href="http://behance.net/{{ member.usernames.behance }}">
                         <i class="fab fa-behance"></i>
-                    </a>
-                    {% endif %}
-
-                    {% if member.usernames.linkedin %}
-                    <a class="social-link"
-                       href="http://linkedin.com/in/{{ member.usernames.linkedin }}">
-                        <i class="fab fa-linkedin-in"></i>
                     </a>
                     {% endif %}
 
@@ -164,6 +150,20 @@ layout: default
                     <a class="social-link"
                        href="https://www.flickr.com/photos/{{ member.usernames.flickr }}">
                         <i class="fab fa-flickr"></i>
+                    </a>
+                    {% endif %}
+
+                    {% if member.usernames.linkedin %}
+                    <a class="social-link"
+                       href="http://linkedin.com/in/{{ member.usernames.linkedin }}">
+                        <i class="fab fa-linkedin-in"></i>
+                    </a>
+                    {% endif %}
+
+                    {% if member.usernames.github %}
+                    <a class="social-link"
+                       href="http://github.com/{{ member.usernames.github }}">
+                        <i class="fab fa-github"></i>
                     </a>
                     {% endif %}
                 </p>
