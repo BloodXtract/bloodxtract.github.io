@@ -30,6 +30,13 @@ layout: default
                     </a>
                     {% endif %}
 
+                    {% if member.usernames.steam %}
+                    <a class="social-link"
+                       href="https://steamcommunity.com/id/{{ member.usernames.steam }}">
+                        <i class="fab fa-steam"></i>
+                    </a>
+                    {% endif %}
+
                     {% if member.usernames.itch %}
                     <a class="social-link"
                        href="http://{{ member.usernames.itch }}.itch.io">
