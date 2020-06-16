@@ -44,6 +44,18 @@ layout: default
                     </a>
                     {% endif %}
 
+                    {% if member.usernames.youtube_custom %}
+                    <a class="social-link"
+                       href="https://www.youtube.com/c/{{ member.usernames.youtube_custom }}">
+                        <i class="fab fa-youtube"></i>
+                    </a>
+                    {% elsif member.usernames.youtube %}
+                    <a class="social-link"
+                       href="https://www.youtube.com/channel/{{ member.usernames.youtube }}">
+                        <i class="fab fa-youtube"></i>
+                    </a>
+                    {% endif %}
+
                     {% if member.usernames.itch %}
                     <a class="social-link"
                        href="http://{{ member.usernames.itch }}.itch.io">
