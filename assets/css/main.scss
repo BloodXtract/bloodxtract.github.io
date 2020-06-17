@@ -31,6 +31,11 @@ body {
     flex: 1 0 auto;
 }
 
+.post-card {
+    @extend .card;
+    width: 100%;
+}
+
 footer {
     p {
         margin-bottom: unset;
