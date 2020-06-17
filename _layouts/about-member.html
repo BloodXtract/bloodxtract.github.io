@@ -193,11 +193,7 @@ subtitle: Member
         {% for card in page.cards_side %}
         <div class="card">
             {% if card.include %}
-                {% if card.relative == true %}
-                    {% include_relative {{ card.include }} %}
-                {% else %}
-                    {% include {{ card.include }} %}
-                {% endif %}
+                {% include members/{{ page.member_name }}/{{ card.include }} %}
             {% else %}
                 {% if card.title %}
                     <h1>{{ card.title }}</h1>
@@ -214,11 +210,7 @@ subtitle: Member
         {% for card in page.cards_main %}
         <div class="card">
             {% if card.include %}
-                {% if card.relative == true %}
-                    {% include_relative {{ card.include }} %}
-                {% else %}
-                    {% include {{ card.include }} %}
-                {% endif %}
+                {% include members/{{ page.member_name }}/{{ card.include }} %}
             {% else %}
                 {% if card.title %}
                     <h1>{{ card.title }}</h1>

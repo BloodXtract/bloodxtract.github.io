@@ -15,5 +15,4 @@ cards_main:
 
 cards_side:
  - include: wakatime_languages.html
-   relative: true
 ---
