@@ -9,172 +9,172 @@ layout: default
         <div class="card" id="profile-card">
             <div>
                 {% if member.avatar %}
-                    <img src="{{ member.avatar }}" class="profile-img" />
+                <img src="{{ member.avatar }}" class="profile-img" />
                 {% else %}
-                    <img src="/assets/img/avatars/default_avatar.png" class="profile-img" />
+                <img src="/assets/img/avatars/default_avatar.png" class="profile-img" />
                 {% endif %}
             </div>
-                <h1 class="profile-name">{{ member.name }}</h1>
+            <h1 class="profile-name">{{ member.name }}</h1>
             {% if member.short_description %}
-                <p class="profile-bio">{{ member.short_description }}</p>
+            <p class="profile-bio">{{ member.short_description }}</p>
             {% endif %}
+
+            <p class="profile-links">
+                {% if member.usernames.discord %}
+                <a class="social-link"
+                   href="http://discord.com/users/{{ member.usernames.discord }}">
+                    <i class="fab fa-discord"></i>
+                </a>
+                {% endif %}
+
+                {% if member.usernames.steam_id %}
+                <a class="social-link"
+                   href="https://steamcommunity.com/id/{{ member.usernames.steam_id }}">
+                    <i class="fab fa-steam"></i>
+                </a>
+                {% elsif member.usernames.steam %}
+                <a class="social-link"
+                   href="https://steamcommunity.com/profiles/{{ member.usernames.steam }}">
+                    <i class="fab fa-steam"></i>
+                </a>
+                {% endif %}
+
+                {% if member.usernames.playstation %}
+                <a class="social-link"
+                   href="https://my.playstation.com/profile/{{ member.usernames.playstation }}">
+                    <i class="fab fa-playstation"></i>
+                </a>
+                {% endif %}
+
+                {% if member.usernames.reddit %}
+                <a class="social-link"
+                   href="https://www.reddit.com/user/{{ member.usernames.reddit }}">
+                    <i class="fab fa-reddit-alien"></i>
+                </a>
+                {% endif %}
+
+                {% if member.usernames.twitch %}
+                <a class="social-link"
+                   href="https://www.twitch.tv/{{ member.usernames.twitch }}">
+                    <i class="fab fa-twitch"></i>
+                </a>
+                {% endif %}
+
+                {% if member.usernames.youtube_custom %}
+                <a class="social-link"
+                   href="https://www.youtube.com/c/{{ member.usernames.youtube_custom }}">
+                    <i class="fab fa-youtube"></i>
+                </a>
+                {% elsif member.usernames.youtube %}
+                <a class="social-link"
+                   href="https://www.youtube.com/channel/{{ member.usernames.youtube }}">
+                    <i class="fab fa-youtube"></i>
+                </a>
+                {% endif %}
+
+                {% if member.usernames.itch %}
+                <a class="social-link"
+                   href="http://{{ member.usernames.itch }}.itch.io">
+                    <i class="fab fa-itch-io"></i>
+                </a>
+                {% endif %}
+
+                {% if member.usernames.twitter %}
+                <a class="social-link"
+                   href="http://twitter.com/{{ member.usernames.twitter }}">
+                    <i class="fab fa-twitter"></i>
+                </a>
+                {% endif %}
+
+                {% if member.usernames.facebook %}
+                <a class="social-link"
+                   href="http://facebook.com/{{ member.usernames.facebook }}">
+                    <i class="fab fa-facebook-f"></i>
+                </a>
+                {% endif %}
+
+                {% if member.usernames.snapchat %}
+                <a class="social-link"
+                   href="http://www.snapchat.com/add/{{ member.usernames.snapchat }}">
+                    <i class="fab fa-snapchat-ghost"></i>
+                </a>
+                {% endif %}
+
+                {% if member.usernames.instagram %}
+                <a class="social-link"
+                   href="http://instagram.com/{{ member.usernames.instagram }}">
+                    <i class="fab fa-instagram"></i>
+                </a>
+                {% endif %}
+
+                {% if member.usernames.medium %}
+                <a class="social-link"
+                   href="http://medium.com/@{{ member.usernames.medium }}">
+                    <i class="fab fa-medium-m"></i>
+                </a>
+                {% endif %}
+
+                {% if member.usernames.soundcloud %}
+                <a class="social-link"
+                   href="https://soundcloud.com/{{ member.usernames.soundcloud }}">
+                    <i class="fab fa-soundcloud"></i>
+                </a>
+                {% endif %}
+
+                {% if member.usernames.spotify %}
+                <a class="social-link"
+                   href="https://open.spotify.com/user/{{ member.usernames.spotify }}">
+                    <i class="fab fa-spotify"></i>
+                </a>
+                {% endif %}
+
+                {% if member.usernames.behance %}
+                <a class="social-link"
+                   href="http://behance.net/{{ member.usernames.behance }}">
+                    <i class="fab fa-behance"></i>
+                </a>
+                {% endif %}
+
+                {% if member.usernames.telegram %}
+                <a class="social-link" href="http://t.me/{{ member.usernames.telegram }}">
+                    <i class="fab fa-telegram-plane"></i>
+                </a>
+                {% endif %}
+
+                {% if member.usernames.dribbble %}
+                <a class="social-link"
+                   href="https://dribbble.com/{{ member.usernames.dribbble }}">
+                    <i class="fab fa-dribbble"></i>
+                </a>
+                {% endif %}
+
+                {% if member.usernames.flickr %}
+                <a class="social-link"
+                   href="https://www.flickr.com/photos/{{ member.usernames.flickr }}">
+                    <i class="fab fa-flickr"></i>
+                </a>
+                {% endif %}
+
+                {% if member.usernames.linkedin %}
+                <a class="social-link"
+                   href="http://linkedin.com/in/{{ member.usernames.linkedin }}">
+                    <i class="fab fa-linkedin-in"></i>
+                </a>
+                {% endif %}
+
+                {% if member.usernames.github %}
+                <a class="social-link"
+                   href="http://github.com/{{ member.usernames.github }}">
+                    <i class="fab fa-github"></i>
+                </a>
+                {% endif %}
+            </p>
             {% if member.usernames.github %}
-                {%- include github_follow_button.html -%}
+            {%- include github_follow_button.html -%}
             {% endif %}
             {% if member.usernames.twitter %}
-                {%- include twitter_follow_button.html -%}
+            {%- include twitter_follow_button.html -%}
             {% endif %}
-
-                <p class="profile-links">
-                    {% if member.usernames.discord %}
-                    <a class="social-link"
-                       href="http://discord.com/users/{{ member.usernames.discord }}">
-                        <i class="fab fa-discord"></i>
-                    </a>
-                    {% endif %}
-
-                    {% if member.usernames.steam_id %}
-                    <a class="social-link"
-                       href="https://steamcommunity.com/id/{{ member.usernames.steam_id }}">
-                        <i class="fab fa-steam"></i>
-                    </a>
-                    {% elsif member.usernames.steam %}
-                    <a class="social-link"
-                       href="https://steamcommunity.com/profiles/{{ member.usernames.steam }}">
-                        <i class="fab fa-steam"></i>
-                    </a>
-                    {% endif %}
-
-                    {% if member.usernames.playstation %}
-                    <a class="social-link"
-                       href="https://my.playstation.com/profile/{{ member.usernames.playstation }}">
-                        <i class="fab fa-playstation"></i>
-                    </a>
-                    {% endif %}
-
-                    {% if member.usernames.reddit %}
-                    <a class="social-link"
-                       href="https://www.reddit.com/user/{{ member.usernames.reddit }}">
-                        <i class="fab fa-reddit-alien"></i>
-                    </a>
-                    {% endif %}
-
-                    {% if member.usernames.twitch %}
-                    <a class="social-link"
-                       href="https://www.twitch.tv/{{ member.usernames.twitch }}">
-                        <i class="fab fa-twitch"></i>
-                    </a>
-                    {% endif %}
-
-                    {% if member.usernames.youtube_custom %}
-                    <a class="social-link"
-                       href="https://www.youtube.com/c/{{ member.usernames.youtube_custom }}">
-                        <i class="fab fa-youtube"></i>
-                    </a>
-                    {% elsif member.usernames.youtube %}
-                    <a class="social-link"
-                       href="https://www.youtube.com/channel/{{ member.usernames.youtube }}">
-                        <i class="fab fa-youtube"></i>
-                    </a>
-                    {% endif %}
-
-                    {% if member.usernames.itch %}
-                    <a class="social-link"
-                       href="http://{{ member.usernames.itch }}.itch.io">
-                        <i class="fab fa-itch-io"></i>
-                    </a>
-                    {% endif %}
-
-                    {% if member.usernames.twitter %}
-                    <a class="social-link"
-                       href="http://twitter.com/{{ member.usernames.twitter }}">
-                        <i class="fab fa-twitter"></i>
-                    </a>
-                    {% endif %}
-
-                    {% if member.usernames.facebook %}
-                    <a class="social-link"
-                       href="http://facebook.com/{{ member.usernames.facebook }}">
-                        <i class="fab fa-facebook-f"></i>
-                    </a>
-                    {% endif %}
-
-                    {% if member.usernames.snapchat %}
-                    <a class="social-link"
-                       href="http://www.snapchat.com/add/{{ member.usernames.snapchat }}">
-                        <i class="fab fa-snapchat-ghost"></i>
-                    </a>
-                    {% endif %}
-
-                    {% if member.usernames.instagram %}
-                    <a class="social-link"
-                       href="http://instagram.com/{{ member.usernames.instagram }}">
-                        <i class="fab fa-instagram"></i>
-                    </a>
-                    {% endif %}
-
-                    {% if member.usernames.medium %}
-                    <a class="social-link"
-                       href="http://medium.com/@{{ member.usernames.medium }}">
-                        <i class="fab fa-medium-m"></i>
-                    </a>
-                    {% endif %}
-
-                    {% if member.usernames.soundcloud %}
-                    <a class="social-link"
-                       href="https://soundcloud.com/{{ member.usernames.soundcloud }}">
-                        <i class="fab fa-soundcloud"></i>
-                    </a>
-                    {% endif %}
-
-                    {% if member.usernames.spotify %}
-                    <a class="social-link"
-                       href="https://open.spotify.com/user/{{ member.usernames.spotify }}">
-                        <i class="fab fa-spotify"></i>
-                    </a>
-                    {% endif %}
-
-                    {% if member.usernames.behance %}
-                    <a class="social-link"
-                       href="http://behance.net/{{ member.usernames.behance }}">
-                        <i class="fab fa-behance"></i>
-                    </a>
-                    {% endif %}
-
-                    {% if member.usernames.telegram %}
-                    <a class="social-link" href="http://t.me/{{ member.usernames.telegram }}">
-                        <i class="fab fa-telegram-plane"></i>
-                    </a>
-                    {% endif %}
-
-                    {% if member.usernames.dribbble %}
-                    <a class="social-link"
-                       href="https://dribbble.com/{{ member.usernames.dribbble }}">
-                        <i class="fab fa-dribbble"></i>
-                    </a>
-                    {% endif %}
-
-                    {% if member.usernames.flickr %}
-                    <a class="social-link"
-                       href="https://www.flickr.com/photos/{{ member.usernames.flickr }}">
-                        <i class="fab fa-flickr"></i>
-                    </a>
-                    {% endif %}
-
-                    {% if member.usernames.linkedin %}
-                    <a class="social-link"
-                       href="http://linkedin.com/in/{{ member.usernames.linkedin }}">
-                        <i class="fab fa-linkedin-in"></i>
-                    </a>
-                    {% endif %}
-
-                    {% if member.usernames.github %}
-                    <a class="social-link"
-                       href="http://github.com/{{ member.usernames.github }}">
-                        <i class="fab fa-github"></i>
-                    </a>
-                    {% endif %}
-                </p>
 
             {% if member.location %}
             <h6><i class="fas fa-map-marker-alt"></i> {{ member.location }}</h6>
