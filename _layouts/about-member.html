@@ -3,7 +3,13 @@ layout: default
 subtitle: Member
 ---
 
-{% assign member = site.data.members[page.member_name] %}
+{% if page.member_code %}
+{% assign member_code = page.member_code %}
+{% else %}
+{% assign member_code = page.name | remove: ".md" | remove: ".html" %}
+{% endif %}
+
+{% assign member = site.data.members[member_code] %}
 
 <div class="row ">
     <div class="col-lg-4 offset-md-1">
@@ -193,14 +199,14 @@ subtitle: Member
         {% for card in page.cards_side %}
         <div class="card">
             {% if card.include %}
-                {% include members/{{ page.member_name }}/{{ card.include }} %}
+            {% include members/{{ member_code }}/{{ card.include }} %}
             {% else %}
-                {% if card.title %}
-                    <h1>{{ card.title }}</h1>
-                {% endif %}
-                {% if card.text %}
-                    <p>{{ card.text }}</p>
-                {% endif %}
+            {% if card.title %}
+            <h1>{{ card.title }}</h1>
+            {% endif %}
+            {% if card.text %}
+            <p>{{ card.text }}</p>
+            {% endif %}
             {% endif %}
         </div>
         {% endfor %}
@@ -210,14 +216,14 @@ subtitle: Member
         {% for card in page.cards_main %}
         <div class="card">
             {% if card.include %}
-                {% include members/{{ page.member_name }}/{{ card.include }} %}
+            {% include members/{{ member_code }}/{{ card.include }} %}
             {% else %}
-                {% if card.title %}
-                    <h1>{{ card.title }}</h1>
-                {% endif %}
-                {% if card.text %}
-                    <p>{{ card.text }}</p>
-                {% endif %}
+            {% if card.title %}
+            <h1>{{ card.title }}</h1>
+            {% endif %}
+            {% if card.text %}
+            <p>{{ card.text }}</p>
+            {% endif %}
             {% endif %}
         </div>
         {% endfor %}

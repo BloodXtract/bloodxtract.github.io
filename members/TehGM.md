@@ -1,5 +1,4 @@
 ---
-member_name: TehGM
 title: TehGM
 
 menus: header
