@@ -7,6 +7,28 @@
 
 /* custom css goes below */
 
+/*** UTILS ***/
+.col-center {
+    float: none;
+    margin: 0 auto;
+}
+
+/*** PAGES AND HOME ***/
+body {
+    display: flex;
+    flex-direction: column;
+}
+
+.main {
+    flex: 1 0 auto;
+}
+
+.page-card {
+    @extend .card !optional;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
 .jumbotron {
     @extend .jumbotron;
     background-color: var(--card-background-color);
@@ -22,20 +44,6 @@
     }
 }
 
-body {
-    display: flex;
-    flex-direction: column;
-}
-
-.page-content {
-    flex: 1 0 auto;
-}
-
-.post-card {
-    @extend .card;
-    width: 100%;
-}
-
 footer {
     p {
         margin-bottom: unset;
@@ -46,6 +54,7 @@ footer {
     flex-shrink: 0;
 }
 
+/*** MAIN MENU ***/
 .dropdown-menu {
     background-color: var(--card-background-color);
 }
@@ -59,6 +68,8 @@ footer {
     }
 }
 
+
+/*** ABOUT MEMBER ***/
 .profile-img {
     border-radius: 25%;
 }
@@ -67,13 +78,15 @@ footer {
     font-size: 20px;
 }
 
-article {
-    font-size: 1.2rem;
+
+/*** BLOG POSTS ***/
+.post-card {
+    @extend .card;
+    width: 100%;
 }
 
-.col-center {
-    float: none;
-    margin: 0 auto;
+article {
+    font-size: 1.2rem;
 }
 
 .about-author {
@@ -88,5 +101,88 @@ article {
     .author-info {
         width: 100%;
         margin-left: 15px;
+    }
+}
+
+/*** GALLERY ***/
+.gallery-container {
+    margin-bottom: 30px;
+
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.gallery-thumb {
+    max-width: 450px;
+    border-radius: 2px 2px 15px 15px;
+    cursor: pointer;
+    margin-bottom: 10px;
+    box-shadow: 3px 3px 30px 7px rgba(0,0,0,0.45);
+    padding: 15px;
+    transition: box-shadow ease 0.5s;
+    text-decoration: none;
+    position: relative;
+
+    & + & {
+        margin-left: 30px;
+    }
+
+    &:hover {
+        text-decoration: none;
+        box-shadow: 3px 3px 30px 7px rgba(0,0,0,1);
+    }
+
+    img {
+        padding: .25rem;
+        background-color: #000;
+        border: 1px solid #020305;
+        border-radius: .25rem;
+        max-width: 100%;
+        height: auto;
+    }
+
+    .title {
+        margin-top: 10px;
+        word-wrap: break-word;
+        color: var(--main-text-color);
+    }
+
+    .title, .counter {
+        text-align: center;
+    }
+
+    .counter {
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        font-size: 25px;
+        line-height: 45px;
+        border: 2px solid black;
+        color: var(--link-color);
+        background: var(--newsletter-background-color);
+        position: absolute;
+        top: 10px;
+        right: 5px;
+    }
+}
+
+.gallery-sub {
+    display: none;
+}
+
+.gallery-sub-title {
+    @extend h3;
+    font-weight: bold;
+}
+
+.gallery-sub-description {
+    @extend span;
+    font-weight: bold;
+}
+
+.lg {
+    .lg-sub-html, .lg-toolbar {
+        background-color: rgba(0, 0, 0, 0.75);
     }
 }

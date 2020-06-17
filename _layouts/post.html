@@ -1,12 +1,12 @@
 ---
-layout: default
+layout: page
 subtitle: Blog
 ---
 
 {% assign author = site.data.members[page.author] %}
 
 <div class="col-lg-7 col-center">
-    <div class="row" id="blog-post-container">
+    <div class="row">
             {%- include blog_post_article.html -%}
             {%- include blog_post_comments.html-%}
     </div>

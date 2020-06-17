@@ -1,38 +1,30 @@
 ---
-layout: gallery
+layout: page
 title: Gallery
-permalink: /gallery/
 ---
 
+<div class="page-card col-md-11 col-center">
+    <h1 class="page-title">Image Albums</h1>
+    <h4>Here we drop our images - be it screenshots or simply other cool stuff</h4>
 
-    <div class="col-lg-8 offset-md-2">
+    <div class="col-lg-12">
+        <div class="gallery-container">
+            {% for album_hash in site.data.gallery %}
+            {% assign album = album_hash[1] %}
 
-      <div class="row">
-    {% assign count = 0 %}
-    {% assign align = "left" %}
-    {% for gallery in site.data.galleries.overview %}
-    {% if count == 0 %}<div class="row">{% endif %}
-      <div class="card">
-        <div class="card-title"> {{gallery.title}}</div>
-        <div class="row">
+            {% if album.images.size > 0 %}
+            <a href="/gallery/{{ album_hash[0] }}"
+               class="gallery-thumb">
 
-        <a href="{{ site.url }}{{ site.baseurl }}/gallery/{{ gallery.directory }}.html">
-          <img class="img-thumbnail" alt="{{ gallery.title }}" src="{{ site.url }}{{ site.baseurl }}/assets/img/gallery/{% if gallery.picture_path %}{{ gallery.picture_path }}{% else %}{{ gallery.directory }}{% endif %}/{{ gallery.preview.thumbnail }}" />
-        </a>
+                <img alt="{{ album.display_name }}"
+                     src="/assets/img/gallery/{{ album_hash[0] }}/{{ album.thumbnail }}" />
+                <div class="title">
+                    {{ album.display_name }}
+                </div>
+                <div class="counter">{{ album.images.size }}</div>
+            </a>
+            {% endif %}
+            {% endfor %}
         </div>
-      </div>
-    {% if count == 1 %}</div>{% endif %}
-    {% assign count = count | plus: 1 %}
-    {% assign align = "right" %}
-    {% if count >= 2 %}
-    {% assign align = "left" %}
-    {% assign count = 0 %}
-    {% endif %}
-    {% endfor %}
-
-    {% if count != 1 %}
-    </div>
-    {% endif %}
-
     </div>
 </div>
