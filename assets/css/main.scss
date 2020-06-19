@@ -5,12 +5,24 @@
 
 @import "devlopr";
 
-/* custom css goes below */
+@media (prefers-color-scheme: dark) {
+    html,
+    html[data-theme="dark"] {
+        --button-background-color: #232323;
+        --button-highlight-color: #111;
+    }
+
+    html[data-theme="light"] {
+        --button-background-color: #fff;
+        --button-highlight-color: #ccc;
+    }
+}
 
 /*** UTILS ***/
 .col-center {
     float: none;
     margin: 0 auto;
+    display: block;
 }
 
 /*** PAGES AND HOME ***/
@@ -74,18 +86,50 @@ footer {
     flex-shrink: 0;
 }
 
+.btn {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.btn-primary {
+    &, &:hover {
+        background-color: var(--button-background-color);
+        border: 1px solid var(--main-background-color);
+    }
+}
+
 /*** MAIN MENU ***/
 .dropdown-menu {
     background-color: var(--card-background-color);
 }
 
-.dropdown-item {
+.dropdown-item, .btn-primary {
     color: var(--link-color);
 
     &:hover {
         color: #ffffff;
-        background-color: var(--button-background-color);
+        background-color: var(--button-highlight-color);
     }
+
+    &:not(:disabled):not(.disabled):active {
+        border: none;
+        box-shadow: none;
+        color: var(--link-color-visited);
+        background-color: var(--button-highlight-color);
+    }
+
+    &:focus, &:visited {
+        box-shadow: none;
+        color: var(--link-color-visited);
+        border: 1px solid var(--link-color);
+    }
+
+    /*&:visited {
+        border: 1px solid var(--link-color);
+        box-shadow: none;
+        color: var(--link-color-visited);
+        background-color: var(--button-highlight-color);
+    }*/
 }
 
 
