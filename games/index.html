@@ -5,19 +5,21 @@ title: Games We Play
 
 <div class="page-card col-md-11 col-center">
     <h1 class="page-title">Games We Play</h1>
-    <h4>Here's list of multiplayer games we play</h4>
+    <h4>Here's a list of online multiplayer games we play</h4>
 </div>
 
 {% for game_hash in site.data.games %}
 {% assign game = game_hash[1] %}
 {% assign game_code = game_hash[0] %}
 
-{% include 
-    game_row.html 
-    game_code=game_code
-    show_members_playing=true 
-    text=game.short_description 
-css_class="col-md-11 col-center" 
-%}
+{% if game.online_multiplayer == true %}
+    {% include
+        game_row.html
+        game_code=game_code
+        show_members_playing=true
+        text=game.short_description
+    css_class="col-md-11 col-center"
+    %}
+{% endif %}
 
 {% endfor %}

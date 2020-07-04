@@ -4,6 +4,7 @@
     "local_page": "path-of-exile",
     "thumbnail": "/assets/img/games/thumbnails/Path_of_Exile_Logo.png",
     "short_description": "Path of Exile is one of the best hack'n'slash games, that's for sure! We mainly play leagues, and you're welcome to join our guild!",
+    "online_multiplayer": true,
 
     "urls": {
       "steam": "https://store.steampowered.com/app/238960/Path_of_Exile/",
@@ -27,6 +28,7 @@
   "GrandTheftAutoOnline": {
     "name": "Grand Theft Auto Online",
     "local_page": "gta5",
+    "online_multiplayer": true,
     "members_playing": [
       "TehGM",
       "Tajniak"
@@ -42,6 +44,7 @@
   },
   "DeepRockGalactic": {
     "name": "Deep Rock Galactic",
+    "online_multiplayer": true,
     "members_playing": [
       "TehGM",
       "BornToLose",
@@ -50,6 +53,7 @@
   },
   "Helldivers": {
     "name": "HELLDIVERS",
+    "online_multiplayer": true,
     "members_playing": [
       "TehGM",
       "BornToLose"
@@ -57,6 +61,7 @@
   },
   "SpaceEngineers": {
     "name": "Space Engineers",
+    "online_multiplayer": true,
     "members_playing": [
       "TehGM",
       "BornToLose"
@@ -64,12 +69,14 @@
   },
   "LeagueOfLegends": {
     "name": "League of Legends",
+    "online_multiplayer": true,
     "members_playing": [
       "BornToLose"
     ]
   },
   "Paladins": {
     "name": "Paladins",
+    "online_multiplayer": true,
     "members_playing": [
       "TehGM",
       "BornToLose"
@@ -77,9 +84,17 @@
   },
   "Overwatch": {
     "name": "Overwatch",
+    "online_multiplayer": true,
     "members_playing": [
       "TehGM",
       "BornToLose"
+    ]
+  },
+  "X4Foundations": {
+    "name": "X4: Foundations",
+    "online_multiplayer": false,
+    "members_playing": [
+      "TehGM"
     ]
   }
 }
