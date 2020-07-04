@@ -1,0 +1,44 @@
+{% assign game = site.data.games[include.game_code] %}
+{% capture game_href %}
+    {% if game.local_page %}
+        /games/{{ game.local_page }}
+    {% else %}
+        /games/{{ include.game_code }}
+    {% endif %}
+{% endcapture %}
+
+<div class="game-row {{ include.css_class }}">
+    {% if game.thumbnail and include.show_game_thumbnail != false %}
+        <!-- Game thumbnail -->
+        <a class="thumbnail-box" href="{{ game_href }}">
+            <img class="thumbnail" src="/assets/img/games/{{ game.thumbnail }}">
+        </a>
+    {% endif %}
+
+    <div class="main-box">
+        <div class="main">
+            <!-- Game name and link -->
+            <h3 class="title"><a href="{{ game_href }}">{{ game.name }}</a></h3>
+
+            {% if include.text %}
+            <!-- Game short description -->
+            <p class="text">{{ include.text }}</p>
+            {% endif %}
+        </div>
+
+        {% if include.show_members_playing == true %}
+        <!-- members playing -->
+        <p class="members">
+            Members that play:
+            {% assign member_links = "" | split: ',' %}
+            {% assign sorted_members_playing = game.members_playing | sort %}
+            {% for member_code in sorted_members_playing %}
+            {% assign member = site.data.members[member_code] %}
+            {% capture link %}<a href="/members/{{ member_code }}">{{ member.name }}</a>{% endcapture %}
+            {% assign member_links = member_links | push: link %}
+            {% endfor %}
+            {{ member_links | array_to_sentence_string }}
+        </p>
+        {% endif %}
+    </div>
+</div>

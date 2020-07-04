@@ -1,0 +1,23 @@
+{
+  "path-of-exile": {
+    "name": "Path of Exile",
+    "thumbnail": "thumbnails/Path_of_Exile_Logo.png",
+    "short_description": "Path of Exile is one of the best hack'n'slash games, that's for sure! We mainly play leagues, and you're welcome to join our guild!",
+    "steam_url": "https://store.steampowered.com/app/238960/Path_of_Exile/",
+    "official_url": "https://www.pathofexile.com/",
+    "members_playing": [
+      "TehGM",
+      "BornToLose",
+      "Tajniak"
+    ],
+    "guild": {
+      "url": "",
+      "name": "BloodXtract",
+      "open": true,
+      "players_inviting": [
+        "TehGM",
+        "BornToLose"
+      ]
+    }
+  }
+}
