@@ -5,16 +5,6 @@ description: >- # this means to ignore newlines until "baseurl:"
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://www.bloodxtract.com" # the base hostname & protocol for your site, e.g. https://example.github.io
 
-urls:
-    - text: Members
-      url: /members/TehGM
-    - text: Blog
-      url: /blog
-    - text: Gallery
-      url: /gallery
-    - text: Contact Us
-      url : /contact
-
 # Edit these details
 
 home:
@@ -30,22 +20,6 @@ highlighter: rouge
 paginate: 4
 per_page: 4
 paginate_path: "/blog/page/:num/"
-
-# minify
-# compress_html:
-#   clippings: all
-#   comments: ["<!-- ", " -->"]
-#   endings: all
-#   ignore:
-#     envs: ['development']
-
-# Archives
-# jekyll-archives:
-#   enabled:
-#     - categories
-#   layout: archive
-#   permalinks:
-#     category: '/category/:name/'
 
 collections:
   posts:
@@ -66,9 +40,8 @@ plugins:
   - jekyll-paginate
   - jekyll-gist
   - jekyll-seo-tag
-  - jekyll-sitemap
-  - jekyll-menus
   - jekyll-redirect-from
+  - jemoji
 
 
 # Exclude from processing.
