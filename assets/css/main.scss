@@ -162,6 +162,27 @@ footer {
 
 
 /*** BLOG POSTS ***/
+.blog-post-preview {
+    @extend .blog-post-preview !optional;
+    @include box-hover-highlight;
+
+    color: unset;
+    &:hover {
+        text-decoration: none;
+        color: unset;
+        cursor: pointer;
+
+        .card-title {
+            @extend a, :hover;
+            text-decoration: underline;
+        }
+    }
+
+    .card-title {
+        @extend a;
+    }
+}
+
 .post-card {
     @extend .card;
     width: 100%;
