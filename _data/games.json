@@ -1,10 +1,14 @@
 {
-  "path-of-exile": {
+  "PathOfExile": {
     "name": "Path of Exile",
-    "thumbnail": "thumbnails/Path_of_Exile_Logo.png",
+    "local_page": "path-of-exile",
+    "thumbnail": "/assets/img/games/thumbnails/Path_of_Exile_Logo.png",
     "short_description": "Path of Exile is one of the best hack'n'slash games, that's for sure! We mainly play leagues, and you're welcome to join our guild!",
-    "steam_url": "https://store.steampowered.com/app/238960/Path_of_Exile/",
-    "official_url": "https://www.pathofexile.com/",
+
+    "urls": {
+      "steam": "https://store.steampowered.com/app/238960/Path_of_Exile/",
+      "official": "https://www.pathofexile.com/"
+    },
     "members_playing": [
       "TehGM",
       "BornToLose",
@@ -19,5 +23,63 @@
         "BornToLose"
       ]
     }
+  },
+  "GrandTheftAutoOnline": {
+    "name": "Grand Theft Auto Online",
+    "local_page": "gta5",
+    "members_playing": [
+      "TehGM",
+      "Tajniak"
+    ],
+    "guild": {
+      "url": "https://socialclub.rockstargames.com/crew/bloodxtract/wall",
+      "name": "BloodXtract",
+      "open": true,
+      "players_inviting": [
+        "TehGM"
+      ]
+    }
+  },
+  "DeepRockGalactic": {
+    "name": "Deep Rock Galactic",
+    "members_playing": [
+      "TehGM",
+      "BornToLose",
+      "Tajniak"
+    ]
+  },
+  "Helldivers": {
+    "name": "HELLDIVERS",
+    "members_playing": [
+      "TehGM",
+      "BornToLose"
+    ]
+  },
+  "SpaceEngineers": {
+    "name": "Space Engineers",
+    "members_playing": [
+      "TehGM",
+      "BornToLose"
+    ]
+  },
+  "LeagueOfLegends": {
+    "name": "League of Legends",
+    "members_playing": [
+      "BornToLose"
+    ]
+  },
+  "Paladins": {
+    "name": "Paladins",
+    "members_playing": [
+      "TehGM",
+      "BornToLose"
+    ]
+  },
+  "Overwatch": {
+    "name": "Overwatch",
+    "members_playing": [
+      "TehGM",
+      "BornToLose"
+    ]
   }
 }

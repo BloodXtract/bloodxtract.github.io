@@ -1,24 +1,35 @@
 {% assign game = site.data.games[include.game_code] %}
-{% capture game_href %}
-    {% if game.local_page %}
-        /games/{{ game.local_page }}
-    {% else %}
-        /games/{{ include.game_code }}
-    {% endif %}
-{% endcapture %}
 
 <div class="game-row {{ include.css_class }}">
-    {% if game.thumbnail and include.show_game_thumbnail != false %}
+    {% if include.show_game_thumbnail != false %}
         <!-- Game thumbnail -->
-        <a class="thumbnail-box" href="{{ game_href }}">
-            <img class="thumbnail" src="/assets/img/games/{{ game.thumbnail }}">
-        </a>
+        {% if game.thumbnail %}
+            {% assign thumb = game.thumbnail %}
+        {% else %}
+            {% assign thumb = "/assets/img/placeholder.png" %}
+        {% endif %}
+
+        {% if game.local_page %}
+            <a class="thumbnail-box" href="/games/{{ game.local_page }}">
+                <img class="thumbnail" src="{{ thumb }}">
+            </a>
+        {% else %}
+            <div class="thumbnail-box">
+                <img class="thumbnail" src="{{ thumb }}">
+            </div>
+        {% endif %}
     {% endif %}
 
     <div class="main-box">
         <div class="main">
             <!-- Game name and link -->
-            <h3 class="title"><a href="{{ game_href }}">{{ game.name }}</a></h3>
+            <h3 class="title">
+                {% if game.local_page %}
+                    <a href="/games/{{ game.local_page }}">{{ game.name }}</a>
+                {% else %}
+                    {{ game.name }}
+                {% endif %}
+            </h3>
 
             {% if include.text %}
             <!-- Game short description -->
@@ -26,7 +37,7 @@
             {% endif %}
         </div>
 
-        {% if include.show_members_playing == true %}
+        {% if include.show_members_playing == true and game.members_playing.size != 0 %}
         <!-- members playing -->
         <p class="members">
             Members that play:
