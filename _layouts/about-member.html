@@ -210,6 +210,26 @@ subtitle: Member
             {% endif %}
         </div>
         {% endfor %}
+
+        {% if page.games.display == true and page.games.location == "cards_side" %}
+            <div class="card">
+                <h1>Games I play</h1>
+                {% for game_hash in site.data.games %}
+                    {% assign game = game_hash[1] %}
+                    {% assign game_code = game_hash[0] %}
+
+                    {% if game.members_playing contains member_code %}
+                    {% include
+                        game_row.html
+                        game_code=game_code
+                        css_class="member-card"
+                        show_members_playing=false
+                    %}
+                    {% endif %}
+
+                {% endfor %}
+            </div>
+        {% endif %}
     </div>
     <div class="col-lg-7">
 
@@ -227,6 +247,27 @@ subtitle: Member
             {% endif %}
         </div>
         {% endfor %}
+
+
+        {% if page.games.display == true and page.games.location == "cards_main" %}
+        <div class="card">
+            <h1>Games I play</h1>
+            {% for game_hash in site.data.games %}
+                {% assign game = game_hash[1] %}
+                {% assign game_code = game_hash[0] %}
+
+                {% if game.members_playing contains member_code %}
+                {% include
+                    game_row.html
+                    game_code=game_code
+                    css_class="member-card"
+                    show_members_playing=false
+                %}
+                {% endif %}
+
+            {% endfor %}
+        </div>
+        {% endif %}
 
         {{ content }}
     </div>
