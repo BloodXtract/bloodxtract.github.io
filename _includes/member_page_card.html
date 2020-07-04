@@ -1,0 +1,36 @@
+{% assign card = include.card_data %}
+{% assign member = include.member_code %}
+
+{% if card %}
+    <div class="card">
+        {% if card.include %}
+            {% include members/{{ include.member_code }}/{{ card.include }} %}
+        {% else %}
+            {% if card.title %}
+                <h1>{{ card.title }}</h1>
+            {% endif %}
+            {% if card.text %}
+                <p>{{ card.text }}</p>
+            {% endif %}
+            {% if card.preset == "games" or card.preset == "games_list"  %}
+                {% unless card.title %}
+                    <h1>Games I play</h1>
+                {% endunless %}
+                {% for game_hash in site.data.games %}
+                    {% assign game = game_hash[1] %}
+                    {% assign game_code = game_hash[0] %}
+
+                    {% if game.members_playing contains include.member_code %}
+                        {% include
+                            game_row.html
+                            game_code=game_code
+                            css_class="member-card"
+                            show_members_playing=false
+                        %}
+                    {% endif %}
+
+                {% endfor %}
+            {% endif %}
+        {% endif %}
+    </div>
+{% endif %}

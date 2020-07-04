@@ -11,11 +11,8 @@ buy_me_a_coffee_description: Want to support me? Buy me a beer!
 cards_main:
  - title: About
    text: hlo am TehGM!
+ - preset: games
 
 cards_side:
  - include: wakatime_languages.html
-
-games:
- display: true
- location: cards_main
 ---

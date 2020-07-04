@@ -197,77 +197,14 @@ subtitle: Member
         </div>
 
         {% for card in page.cards_side %}
-        <div class="card">
-            {% if card.include %}
-            {% include members/{{ member_code }}/{{ card.include }} %}
-            {% else %}
-            {% if card.title %}
-            <h1>{{ card.title }}</h1>
-            {% endif %}
-            {% if card.text %}
-            <p>{{ card.text }}</p>
-            {% endif %}
-            {% endif %}
-        </div>
+            {% include member_page_card.html card_data=card member_code=member_code %}
         {% endfor %}
-
-        {% if page.games.display == true and page.games.location == "cards_side" %}
-            <div class="card">
-                <h1>Games I play</h1>
-                {% for game_hash in site.data.games %}
-                    {% assign game = game_hash[1] %}
-                    {% assign game_code = game_hash[0] %}
-
-                    {% if game.members_playing contains member_code %}
-                    {% include
-                        game_row.html
-                        game_code=game_code
-                        css_class="member-card"
-                        show_members_playing=false
-                    %}
-                    {% endif %}
-
-                {% endfor %}
-            </div>
-        {% endif %}
     </div>
     <div class="col-lg-7">
 
         {% for card in page.cards_main %}
-        <div class="card">
-            {% if card.include %}
-            {% include members/{{ member_code }}/{{ card.include }} %}
-            {% else %}
-            {% if card.title %}
-            <h1>{{ card.title }}</h1>
-            {% endif %}
-            {% if card.text %}
-            <p>{{ card.text }}</p>
-            {% endif %}
-            {% endif %}
-        </div>
+            {% include member_page_card.html card_data=card member_code=member_code %}
         {% endfor %}
-
-
-        {% if page.games.display == true and page.games.location == "cards_main" %}
-        <div class="card">
-            <h1>Games I play</h1>
-            {% for game_hash in site.data.games %}
-                {% assign game = game_hash[1] %}
-                {% assign game_code = game_hash[0] %}
-
-                {% if game.members_playing contains member_code %}
-                {% include
-                    game_row.html
-                    game_code=game_code
-                    css_class="member-card"
-                    show_members_playing=false
-                %}
-                {% endif %}
-
-            {% endfor %}
-        </div>
-        {% endif %}
 
         {{ content }}
     </div>
