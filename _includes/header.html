@@ -15,9 +15,29 @@
                     Members
                 </a>
                 <div class="dropdown-menu" aria-labelledby="membersDropdownMenuButton">
-                    <a class="dropdown-item" href="/members/TehGM">TehGM</a>
-                    <a class="dropdown-item" href="/members/BornToLose">Born to Lose</a>
-                    <a class="dropdown-item" href="/members/Tajniak">Tajniak</a>
+
+                    {% assign members_core = "" | split: ',' %}
+                    {% assign members_noncore = "" | split: ',' %}
+
+                    {% for member_kvp in site.data.members %}
+                        {% if member_kvp[1].core == true %}
+                            {% assign members_core = members_core | push: member_kvp %}
+                        {% else %}
+                            {% assign members_noncore = members_noncore | push: member_kvp %}
+                        {% endif %}
+                    {% endfor %}
+
+
+
+                    {% for member in members_core %}
+                        <a class="dropdown-item" href="/members/{{ member[0] }}">{{ member[1].name }}</a>
+                    {% endfor %}
+                    {% if members_core.size > 0 and members_noncore.size > 0 %}
+                        <div class="dropdown-divider"></div>
+                    {% endif %}
+                    {% for member in members_noncore %}
+                        <a class="dropdown-item" href="/members/{{ member[0] }}">{{ member[1].name }}</a>
+                    {% endfor %}
                 </div>
             </li>
             <li class="nav-item">

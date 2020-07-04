@@ -18,6 +18,7 @@
   },
   "BornToLose": {
     "name": "Born to Lose",
+    "core": true,
     "avatar": "https://cdn.discordapp.com/avatars/386245029943050251/267d40702d1b28f7cc8b730ee812129a.png?size=512",
     "email": "borntolose@bloodxtract.com",
     "usernames": {
@@ -27,6 +28,7 @@
   },
   "Tajniak": {
     "name": "Tajniak",
+    "core": true,
     "avatar": "https://cdn.discordapp.com/avatars/377903467676696577/afb334271aa3b3dd1dcff62d1217df41.png?size=512",
     "email": "tajniak@bloodxtract.com",
     "usernames": {

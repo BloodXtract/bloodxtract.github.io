@@ -141,13 +141,11 @@ footer {
         color: var(--link-color-visited);
         border: 1px solid var(--link-color);
     }
+}
 
-    /*&:visited {
-        border: 1px solid var(--link-color);
-        box-shadow: none;
-        color: var(--link-color-visited);
-        background-color: var(--button-highlight-color);
-    }*/
+.dropdown-divider {
+    border-top: 1px dashed rgba(0, 0, 0, 0.45);
+    /*margin: 0;*/
 }
 
 
