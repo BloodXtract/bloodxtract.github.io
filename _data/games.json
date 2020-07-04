@@ -2,7 +2,7 @@
   "PathOfExile": {
     "name": "Path of Exile",
     "local_page": "path-of-exile",
-    "thumbnail": "/assets/img/games/thumbnails/Path_of_Exile_Logo.png",
+    "thumbnail": "/assets/img/games/thumbnails/logo-pathofexile-01.png",
     "short_description": "Path of Exile is one of the best hack'n'slash games, that's for sure! We mainly play leagues, and you're welcome to join our guild!",
     "online_multiplayer": true,
 
@@ -16,7 +16,7 @@
       "Tajniak"
     ],
     "guild": {
-      "url": "",
+      "url": "https://www.pathofexile.com/guild/profile/463405",
       "name": "BloodXtract",
       "open": true,
       "players_inviting": [
@@ -28,7 +28,13 @@
   "GrandTheftAutoOnline": {
     "name": "Grand Theft Auto Online",
     "local_page": "gta5",
+    "thumbnail": "/assets/img/games/thumbnails/logo-gta5-01.png",
     "online_multiplayer": true,
+
+    "urls": {
+      "steam": "https://store.steampowered.com/app/271590/Grand_Theft_Auto_V/",
+      "official": "https://www.rockstargames.com/GTAOnline/"
+    },
     "members_playing": [
       "TehGM",
       "Tajniak"
@@ -44,7 +50,13 @@
   },
   "DeepRockGalactic": {
     "name": "Deep Rock Galactic",
+    "thumbnail": "/assets/img/games/thumbnails/logo-deeprockgalactic-01.png",
     "online_multiplayer": true,
+
+    "urls": {
+      "steam": "https://store.steampowered.com/app/548430/Deep_Rock_Galactic/",
+      "official": "https://www.deeprockgalactic.com/"
+    },
     "members_playing": [
       "TehGM",
       "BornToLose",
@@ -53,7 +65,13 @@
   },
   "Helldivers": {
     "name": "HELLDIVERS",
+    "thumbnail": "/assets/img/games/thumbnails/logo-helldivers-01.png",
     "online_multiplayer": true,
+
+    "urls": {
+      "steam": "https://store.steampowered.com/app/394510/HELLDIVERS_Dive_Harder_Edition/",
+      "official": "https://www.arrowheadgamestudios.com/aboutarrowhead/games/helldivers/"
+    },
     "members_playing": [
       "TehGM",
       "BornToLose"
@@ -61,7 +79,13 @@
   },
   "SpaceEngineers": {
     "name": "Space Engineers",
+    "thumbnail": "/assets/img/games/thumbnails/logo-spaceengineers-01.png",
     "online_multiplayer": true,
+
+    "urls": {
+      "steam": "https://store.steampowered.com/app/244850/Space_Engineers/",
+      "official": "https://www.spaceengineersgame.com/"
+    },
     "members_playing": [
       "TehGM",
       "BornToLose"
@@ -69,14 +93,25 @@
   },
   "LeagueOfLegends": {
     "name": "League of Legends",
+    "thumbnail": "/assets/img/games/thumbnails/logo-leagueoflegends-01.png",
     "online_multiplayer": true,
+
+    "urls": {
+      "official": "https://leagueoflegends.com/"
+    },
     "members_playing": [
       "BornToLose"
     ]
   },
   "Paladins": {
     "name": "Paladins",
+    "thumbnail": "/assets/img/games/thumbnails/logo-paladins-01.png",
     "online_multiplayer": true,
+
+    "urls": {
+      "steam": "https://store.steampowered.com/app/444090/Paladins/",
+      "official": "https://www.paladins.com/"
+    },
     "members_playing": [
       "TehGM",
       "BornToLose"
@@ -84,7 +119,12 @@
   },
   "Overwatch": {
     "name": "Overwatch",
+    "thumbnail": "/assets/img/games/thumbnails/logo-overwatch-01.png",
     "online_multiplayer": true,
+
+    "urls": {
+      "official": "https://playoverwatch.com/"
+    },
     "members_playing": [
       "TehGM",
       "BornToLose"
@@ -92,7 +132,13 @@
   },
   "X4Foundations": {
     "name": "X4: Foundations",
+    "thumbnail": "/assets/img/games/thumbnails/logo-x4foundations-01.png",
     "online_multiplayer": false,
+
+    "urls": {
+      "steam": "https://store.steampowered.com/app/392160/X4_Foundations/",
+      "official": "https://www.egosoft.com/games/x4/info_en.php"
+    },
     "members_playing": [
       "TehGM"
     ]
