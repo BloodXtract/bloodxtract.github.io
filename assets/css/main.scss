@@ -322,6 +322,8 @@ $gallery-thumb-spacing: 30px;
         justify-content: center;
         align-items: center;
         display: flex;
+        flex-shrink: 0;
+        align-self: flex-start;
     }
 
     .thumbnail {
@@ -336,6 +338,7 @@ $gallery-thumb-spacing: 30px;
     &.member-card, &.member-card:hover {
         margin: 0;
         box-shadow: none;
+        align-items: center;
         padding-left: 0;
         padding-right: 0;
 
