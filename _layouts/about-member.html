@@ -28,149 +28,150 @@ subtitle: Member
 
             <p class="profile-links">
                 {% if member.usernames.discord %}
-                <a class="social-link"
+                <a class="social-link" target="_blank"
                    href="http://discord.com/users/{{ member.usernames.discord }}">
                     <i class="fab fa-discord"></i>
                 </a>
                 {% endif %}
 
                 {% if member.usernames.steam_id %}
-                <a class="social-link"
+                <a class="social-link" target="_blank"
                    href="https://steamcommunity.com/id/{{ member.usernames.steam_id }}">
                     <i class="fab fa-steam"></i>
                 </a>
                 {% elsif member.usernames.steam %}
-                <a class="social-link"
+                <a class="social-link" target="_blank"
                    href="https://steamcommunity.com/profiles/{{ member.usernames.steam }}">
                     <i class="fab fa-steam"></i>
                 </a>
                 {% endif %}
 
                 {% if member.usernames.playstation %}
-                <a class="social-link"
+                <a class="social-link" target="_blank"
                    href="https://my.playstation.com/profile/{{ member.usernames.playstation }}">
                     <i class="fab fa-playstation"></i>
                 </a>
                 {% endif %}
 
                 {% if member.usernames.reddit %}
-                <a class="social-link"
+                <a class="social-link" target="_blank"
                    href="https://www.reddit.com/user/{{ member.usernames.reddit }}">
                     <i class="fab fa-reddit-alien"></i>
                 </a>
                 {% endif %}
 
                 {% if member.usernames.twitch %}
-                <a class="social-link"
+                <a class="social-link" target="_blank"
                    href="https://www.twitch.tv/{{ member.usernames.twitch }}">
                     <i class="fab fa-twitch"></i>
                 </a>
                 {% endif %}
 
                 {% if member.usernames.youtube_custom %}
-                <a class="social-link"
+                <a class="social-link" target="_blank"
                    href="https://www.youtube.com/c/{{ member.usernames.youtube_custom }}">
                     <i class="fab fa-youtube"></i>
                 </a>
                 {% elsif member.usernames.youtube %}
-                <a class="social-link"
+                <a class="social-link" target="_blank"
                    href="https://www.youtube.com/channel/{{ member.usernames.youtube }}">
                     <i class="fab fa-youtube"></i>
                 </a>
                 {% endif %}
 
                 {% if member.usernames.itch %}
-                <a class="social-link"
+                <a class="social-link" target="_blank"
                    href="http://{{ member.usernames.itch }}.itch.io">
                     <i class="fab fa-itch-io"></i>
                 </a>
                 {% endif %}
 
                 {% if member.usernames.twitter %}
-                <a class="social-link"
+                <a class="social-link" target="_blank"
                    href="http://twitter.com/{{ member.usernames.twitter }}">
                     <i class="fab fa-twitter"></i>
                 </a>
                 {% endif %}
 
                 {% if member.usernames.facebook %}
-                <a class="social-link"
+                <a class="social-link" target="_blank"
                    href="http://facebook.com/{{ member.usernames.facebook }}">
                     <i class="fab fa-facebook-f"></i>
                 </a>
                 {% endif %}
 
                 {% if member.usernames.snapchat %}
-                <a class="social-link"
+                <a class="social-link" target="_blank"
                    href="http://www.snapchat.com/add/{{ member.usernames.snapchat }}">
                     <i class="fab fa-snapchat-ghost"></i>
                 </a>
                 {% endif %}
 
                 {% if member.usernames.instagram %}
-                <a class="social-link"
+                <a class="social-link" target="_blank"
                    href="http://instagram.com/{{ member.usernames.instagram }}">
                     <i class="fab fa-instagram"></i>
                 </a>
                 {% endif %}
 
                 {% if member.usernames.medium %}
-                <a class="social-link"
+                <a class="social-link" target="_blank"
                    href="http://medium.com/@{{ member.usernames.medium }}">
                     <i class="fab fa-medium-m"></i>
                 </a>
                 {% endif %}
 
                 {% if member.usernames.soundcloud %}
-                <a class="social-link"
+                <a class="social-link" target="_blank"
                    href="https://soundcloud.com/{{ member.usernames.soundcloud }}">
                     <i class="fab fa-soundcloud"></i>
                 </a>
                 {% endif %}
 
                 {% if member.usernames.spotify %}
-                <a class="social-link"
+                <a class="social-link" target="_blank"
                    href="https://open.spotify.com/user/{{ member.usernames.spotify }}">
                     <i class="fab fa-spotify"></i>
                 </a>
                 {% endif %}
 
                 {% if member.usernames.behance %}
-                <a class="social-link"
+                <a class="social-link" target="_blank"
                    href="http://behance.net/{{ member.usernames.behance }}">
                     <i class="fab fa-behance"></i>
                 </a>
                 {% endif %}
 
                 {% if member.usernames.telegram %}
-                <a class="social-link" href="http://t.me/{{ member.usernames.telegram }}">
+                <a class="social-link" target="_blank"
+                   href="http://t.me/{{ member.usernames.telegram }}">
                     <i class="fab fa-telegram-plane"></i>
                 </a>
                 {% endif %}
 
                 {% if member.usernames.dribbble %}
-                <a class="social-link"
+                <a class="social-link" target="_blank"
                    href="https://dribbble.com/{{ member.usernames.dribbble }}">
                     <i class="fab fa-dribbble"></i>
                 </a>
                 {% endif %}
 
                 {% if member.usernames.flickr %}
-                <a class="social-link"
+                <a class="social-link" target="_blank"
                    href="https://www.flickr.com/photos/{{ member.usernames.flickr }}">
                     <i class="fab fa-flickr"></i>
                 </a>
                 {% endif %}
 
                 {% if member.usernames.linkedin %}
-                <a class="social-link"
+                <a class="social-link" target="_blank"
                    href="http://linkedin.com/in/{{ member.usernames.linkedin }}">
                     <i class="fab fa-linkedin-in"></i>
                 </a>
                 {% endif %}
 
                 {% if member.usernames.github %}
-                <a class="social-link"
+                <a class="social-link" target="_blank"
                    href="http://github.com/{{ member.usernames.github }}">
                     <i class="fab fa-github"></i>
                 </a>
@@ -192,7 +193,7 @@ subtitle: Member
             {% endif %}
 
             {% if member.website %}
-            <h6><a href="{{ member.website }}"><i class="fas fa-link"></i> {{ member.website }}</a></h6>
+            <h6><a href="{{ member.website }}" target="_blank"><i class="fas fa-link"></i> {{ member.website }}</a></h6>
             {% endif %}
         </div>
 
