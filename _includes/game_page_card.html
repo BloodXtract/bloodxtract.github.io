@@ -1,0 +1,70 @@
+{% assign card = include.card_data %}
+{% assign game = site.data.games[include.game_code] %}
+
+{% if card.include %}
+    <div class="card">
+        {% include games/{{ include.game_code }}/{{ card.include }} %}
+    </div>
+
+{% elsif card.preset == "guild" or card.preset == "guild_info" %}
+    <!--- GUILD INFO --->
+    {% if game.guild and game.guild.name %}
+    <div class="card guild-info">
+        {% if card.title %}
+            <h1 class="title">{{ card.title }}</h1>
+        {% else %}
+            <h1 class="title">Our Guild</h1>
+        {% endif %}
+    
+        {% if game.guild.url %}
+        <a class="name" href="{{ game.guild.url }}" target="_blank">
+        {% endif %}
+        {% if game.guild.thumbnail %}
+        <img class="thumbnail" src="{{ game.guild.thumbnail }}" />
+        {% endif %}
+        <p class="name">{{ game.guild.name }}</p>
+        {% if game.guild.url %}
+        </a>
+        {% endif %}
+    
+        {% if game.guild.open == true %}
+            <p class="text">Feel free to apply!</p>
+            {% if game.guild.recruiters.size > 0 %}
+                <p class="text">You can also contact one of our recruiters:</p>
+                {% include recruiters_list.html game_code=include.game_code %}
+            {% endif %}
+        {% elsif game.guild.players_inviting.size > 0 %}
+            <p class="text">Feel free to contact one of our recruiters:</p>
+            {% include recruiters_list.html game_code=include.game_code %}
+        {% else %}
+            <p class="text">Sorry, recruitment isn't currently open. <i class="far far-frown-open"></i></p>
+        {% endif %}
+    </div>
+    {% endif %}
+
+{% elsif card.preset == "members" %}
+    <!--- MEMBERS PLAYING --->
+    {% if game.members_playing.size > 0 %}
+    <div class="card members-playing-list">
+        {% if card.title %}
+        <h1 class="title">{{ card.title }}</h1>
+        {% else %}
+        <h1 class="title">Who's playing</h1>
+        {% endif %}
+
+        {% assign sorted_members_playing = game.members_playing | sort %}
+        {% for member_code in sorted_members_playing %}
+        {% assign member = site.data.members[member_code] %}
+        <a href="/members/{{member_code}}" class="member-box">
+            {% if member.avatar %}
+            <img src="{{ member.avatar }}" class="thumbnail" />
+            {% else %}
+            <img src="/assets/img/avatars/default_avatar.png" class="thumbnail" />
+            {% endif %}
+            <span class="name">{{member.name}}</span>
+        </a>
+        {% endfor %}
+
+    </div>
+    {% endif %}
+{% endif %}

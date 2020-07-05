@@ -1,0 +1,11 @@
+{% assign game = site.data.games[include.game_code] %}
+
+{% if game.guild.recruiters.size > 0 %}
+<ul class="recruiters-list">
+    {% for recruiter_code in game.guild.recruiters %}
+        {% assign member = site.data.members[recruiter_code] %}
+
+        <li><a href="/members/{{ recruiter_code }}">{{ member.name }}</a></li>
+    {% endfor %}
+</ul>
+{% endif %}

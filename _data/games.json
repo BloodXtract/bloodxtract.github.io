@@ -19,7 +19,7 @@
       "url": "https://www.pathofexile.com/guild/profile/463405",
       "name": "BloodXtract",
       "open": true,
-      "players_inviting": [
+      "recruiters": [
         "TehGM",
         "BornToLose"
       ]
@@ -41,9 +41,10 @@
     ],
     "guild": {
       "url": "https://socialclub.rockstargames.com/crew/bloodxtract/wall",
+      "thumbnail": "https://prod.cloud.rockstargames.com/crews/sc/0555/39989844/publish/emblem/emblem_128.png",
       "name": "BloodXtract",
       "open": true,
-      "players_inviting": [
+      "recruiters": [
         "TehGM"
       ]
     }

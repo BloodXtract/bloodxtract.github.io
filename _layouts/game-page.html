@@ -1,0 +1,61 @@
+---
+layout: page
+subtitle: Games
+---
+
+{% if page.game_code %}
+{% assign game_code = page.game_code %}
+{% else %}
+{% assign game_code = page.name | remove: ".md" | remove: ".html" %}
+{% endif %}
+
+{% assign game = site.data.games[game_code] %}
+
+<div class="row game-page">
+    <div class="side col-xl-3 col-lg-6 col-md-12">
+        <div class="card" id="game-info">
+
+            <h1 class="title">{{ game.name }}</h1>
+
+            {% if game.thumbnail %}
+            <img class="thumbnail" src="{{ game.thumbnail }}" />
+            {% endif %}
+
+            {% if game.urls and game.urls.size > 0 %}
+            <p class="profile-links">
+                {% if game.urls.official %}
+                <a class="social-link" href="{{ game.urls.official }}" target="_blank" data-toggle="tooltip" title="Official Website">
+                    <i class="fas fa-home"></i>
+                </a>
+                {% endif %}
+                {% if game.urls.steam %}
+                <a class="social-link" href="{{ game.urls.steam }}" target="_blank" data-toggle="tooltip" title="Steam Page">
+                    <i class="fab fa-steam"></i>
+                </a>
+                {% endif %}
+            </p>
+            {% endif %}
+
+            {% if game.short_description %}
+            <p class="text">{{ game.short_description }}</p>
+            {% endif %}
+        </div>
+
+        {% for card in page.cards_side %}
+            {% include game_page_card.html card_data=card game_code=game_code %}
+        {% endfor %}
+    </div>
+    <div class="col-xl-9 col-lg-6 col-md-12">
+        {% for card in page.cards_main %}
+            {% include game_page_card.html card_data=card game_code=game_code %}
+        {% endfor %}
+
+        {{ content }}
+    </div>
+</div>
+
+<script>
+$(document).ready(function(){
+  $('[data-toggle="tooltip"]').tooltip();
+});
+</script>

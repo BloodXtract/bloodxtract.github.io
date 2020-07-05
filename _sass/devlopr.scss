@@ -446,13 +446,6 @@ header {
     .profile-links {
         margin-top: 5px;
     }
-    .social-link {
-        color: var(--social-link-color);
-        font-size: 15px;
-        padding: 5px;
-        margin: 2px;
-        text-decoration: none;
-    }
     #header-nav{
         float: right;
         margin-inline-start: 45px;
@@ -465,7 +458,13 @@ header {
         color: var(--main-text-color);
         font-weight: 600;
     }
-
+}
+.social-link {
+    color: var(--social-link-color);
+    font-size: 15px;
+    padding: 5px;
+    margin: 2px;
+    text-decoration: none;
 }
 
 #author_projects {

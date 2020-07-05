@@ -43,6 +43,16 @@
     }
 }
 
+.social-link {
+    color: var(--social-link-color);
+    font-size: 20px;
+
+    &:hover {
+        color: var(--social-link-color);
+        text-decoration: none;
+    }
+}
+
 /*** PAGES AND HOME ***/
 body {
     display: flex;
@@ -152,10 +162,6 @@ footer {
 /*** ABOUT MEMBER ***/
 .profile-img {
     border-radius: 25%;
-}
-
-#profile-card .social-link {
-    font-size: 20px;
 }
 
 
@@ -348,3 +354,104 @@ $gallery-thumb-spacing: 30px;
         }
     }
 }
+
+
+/*** GAME PAGE ***/
+.game-page .card {
+    @extend .card;
+
+    .title {
+        width: 100%;
+    }
+
+    .thumbnail {
+        width: auto;
+        height: auto;
+        max-width: 100%;
+        max-height: 200px;
+        margin-right: 7px;
+        margin-left: 7px;
+    }
+
+    .text {
+        font-size: 19px;
+    }
+    /* specific cards */
+    &#game-info {
+        text-align: center;
+        align-items: center;
+    }
+
+    &.guild-info {
+        .name {
+            @extend .title;
+            line-height: 1.1;
+            font-size: 1.85rem;
+        }
+
+        .recruiters-list {
+            font-size: 19px;
+            list-style-type: none;
+            margin-left: 10px;
+        }
+    }
+
+    &.members-playing-list {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+
+        .member-box {
+            display: flex;
+            flex-direction: row;
+            margin-top: 10px;
+            margin-bottom: 10px;
+            margin-right: 35px;
+            align-items: center;
+
+            .thumbnail {
+                border-radius: 17%;
+                width: 100px;
+                max-width: 100px;
+                min-width: 100px;
+                height: 100px;
+                max-height: 100px;
+                min-height: 100px;
+                flex-grow: 0;
+                flex-shrink: 0;
+            }
+
+            .name {
+                width: 100%;
+                margin-left: 15px;
+                text-align: left;
+            }
+        }
+
+        @media (max-width: 1200px) {
+            flex-direction: column;
+
+            .member-box {
+                margin-right: 0;
+            }
+        }
+    }
+}
+
+/* Side cards overrides */
+.game-page .side .card {
+    .title {
+        text-align: center;
+        align-items: center;
+    }
+
+    &.members-playing-list {
+        flex-direction: column;
+
+        .member-box {
+            margin-right: 0;
+        }
+    }
+}
+
