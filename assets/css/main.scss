@@ -18,6 +18,10 @@
     }
 }
 
+a:hover {
+    color: var(--link-color);
+}
+
 /*** UTILS ***/
 .col-center {
     float: none;
