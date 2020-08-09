@@ -49,6 +49,29 @@
       ]
     }
   },
+  "GuildWars2": {
+    "name": "Guild Wars 2",
+    "local_page": "gw2",
+    "thumbnail": "/assets/img/games/thumbnails/logo-gw2-01.png",
+    "list_global": true,
+
+    "urls": {
+      "official": "https://www.guildwars2.com/"
+    },
+    "members_playing": [
+      "TehGM",
+      "Tajniak",
+      "BornToLose"
+    ],
+    "guild": {
+      "name": "BloodXtract",
+      "open": true,
+      "recruiters": [
+        "TehGM",
+        "BornToLose"
+      ]
+    }
+  },
   "DeepRockGalactic": {
     "name": "Deep Rock Galactic",
     "thumbnail": "/assets/img/games/thumbnails/logo-deeprockgalactic-01.png",
