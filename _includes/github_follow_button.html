@@ -1,0 +1,7 @@
+{% assign username = include.username | default: member.usernames.github %}
+
+<a class="github-button" href="https://github.com/{{ username }}"
+   data-size="large" data-color-scheme="no-preference: dark; light: dark; dark: dark;"
+   data-show-count="true" aria-label="Follow @{{ username }} on GitHub">
+    Follow @{{ username }}
+</a>

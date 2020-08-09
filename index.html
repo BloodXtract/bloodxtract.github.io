@@ -1,0 +1,33 @@
+---
+layout: default
+---
+
+
+<script>
+    if (window.netlifyIdentity) {
+        window.netlifyIdentity.on("init", user => {
+            if (!user) {
+                window.netlifyIdentity.on("login", () => {
+                    document.location.href = "/admin/";
+                });
+            }
+        });
+    }
+</script>
+<script>
+  $(document).ready(function() {
+    $("#typewriteText").typewrite({
+      actions: [{ type: "{{site.home.typewrite-text}}" }]
+    });
+  });
+</script>
+<div class="jumbotron home" style="background-image: url('{{ site.home.jumbotron-background }}')">
+    <div class="center-absolute">
+        <p class="heading">{{ site.title }}</p>
+        <p class="lead" id="typewriteText"></p>
+    </div>
+</div>
+<div class="col-lg-8 offset-md-2">
+    <section>
+    </section>
+</div>

@@ -1,0 +1,49 @@
+{
+  "TehGM": {
+    "name": "TehGM",
+    "core": true,
+    "avatar": "/assets/img/avatars/tehgm.png",
+    "email": "tehgm@bloodxtract.com",
+    "website": "https://tehgm.net",
+    "usernames": {
+      "github": "TehGM",
+      "steam_id": "TehGM",
+      "twitch": "tehgm",
+      "buymeacoffee": "TehGM",
+      "discord": 247081094799687682,
+      "youtube_custom": "tehgm",
+      "playstation": "Teh_GM",
+      "reddit": "TehGM",
+      "twitter": "TehOriginalGM"
+    }
+  },
+  "BornToLose": {
+    "name": "Born to Lose",
+    "core": true,
+    "avatar": "/assets/img/avatars/borntolose.png",
+    "email": "borntolose@bloodxtract.com",
+    "usernames": {
+      "discord": 386245029943050251,
+      "steam_id": "hlofriendo",
+      "instagram": "mamoniestalkuj",
+      "youtube": "UCpRBhTmJSpvo4YhVthTQ3RQ"
+    }
+  },
+  "Tajniak": {
+    "name": "Tajniak",
+    "core": true,
+    "avatar": "/assets/img/avatars/tajniak.png",
+    "email": "tajniak@bloodxtract.com",
+    "website": "https://kalik.dev",
+    "usernames": {
+      "github": "MarcinK-ski",
+      "discord": 377903467676696577,
+      "steam": 76561197998228588,
+      "reddit": "TajniakoO",
+      "twitch": "tajniakoo",
+      "youtube": "UCB3KxKSt0DqJPB3beJANqSQ",
+      "snapchat": "tajniakoo",
+      "spotify": "kalik95"
+    }
+  }
+}

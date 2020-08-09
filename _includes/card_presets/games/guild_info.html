@@ -1,0 +1,42 @@
+{% assign card = include.card_data %}
+{% assign game = site.data.games[include.game_code] %}
+
+
+{% if game.guild and game.guild.name %}
+<div class="card guild-info">
+    {% if card.title %}
+    <h1 class="title">{{ card.title }}</h1>
+    {% else %}
+    <h1 class="title">Our Guild</h1>
+    {% endif %}
+
+    {% if game.guild.url %}
+    <a class="name" href="{{ game.guild.url }}" target="_blank">
+        {% endif %}
+        {% if game.guild.thumbnail %}
+        <img class="thumbnail" src="{{ game.guild.thumbnail }}" />
+        {% endif %}
+        <p class="name">
+            {{ game.guild.name }}
+            {% if game.guild.tag %}
+                [{{ game.guild.tag }}]
+            {% endif %}
+        </p>
+        {% if game.guild.url %}
+    </a>
+    {% endif %}
+
+    {% if game.guild.open == true %}
+    <p class="text">Feel free to apply!</p>
+    {% if game.guild.recruiters.size > 0 %}
+    <p class="text">You can also contact one of our recruiters:</p>
+    {% include recruiters_list.html game_code=include.game_code %}
+    {% endif %}
+    {% elsif game.guild.players_inviting.size > 0 %}
+    <p class="text">Feel free to contact one of our recruiters:</p>
+    {% include recruiters_list.html game_code=include.game_code %}
+    {% else %}
+    <p class="text">Sorry, recruitment isn't currently open. <i class="far far-frown-open"></i></p>
+    {% endif %}
+</div>
+{% endif %}

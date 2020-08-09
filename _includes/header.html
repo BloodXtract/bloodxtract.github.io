@@ -1,0 +1,68 @@
+
+<nav class="navbar navbar-expand-lg fixed-top navbar-dark" id="topNav">
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="icono-hamburger" id="navbar-hamburger"> </span>
+    </button>
+    <a class="navbar-brand" href="/">{{site.title}}</a>
+    <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+            <li class="nav-item">
+                <a class="nav-link" href="/games">Games We Play</a>
+            </li>
+            <li class="nav-item dropdown">
+                <a class="nav-link" role="button" href="#" id="membersDropdownMenuButton"
+                   data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Members
+                </a>
+                <div class="dropdown-menu" aria-labelledby="membersDropdownMenuButton">
+
+                    {% assign members_core = "" | split: ',' %}
+                    {% assign members_noncore = "" | split: ',' %}
+
+                    {% for member_kvp in site.data.members %}
+                    {% if member_kvp[1].core == true %}
+                    {% assign members_core = members_core | push: member_kvp %}
+                    {% else %}
+                    {% assign members_noncore = members_noncore | push: member_kvp %}
+                    {% endif %}
+                    {% endfor %}
+
+
+
+                    {% for member in members_core %}
+                    <a class="dropdown-item" href="/members/{{ member[0] }}">{{ member[1].name }}</a>
+                    {% endfor %}
+                    {% if members_core.size > 0 and members_noncore.size > 0 %}
+                    <div class="dropdown-divider"></div>
+                    {% endif %}
+                    {% for member in members_noncore %}
+                    <a class="dropdown-item" href="/members/{{ member[0] }}">{{ member[1].name }}</a>
+                    {% endfor %}
+                </div>
+            </li>
+            {% if site.posts.size > 0 %}
+                <li class="nav-item">
+                    <a class="nav-link" href="/posts">Posts</a>
+                </li>
+            {% endif %}
+            {% for album_hash in site.data.gallery %}
+                {% assign album = album_hash[1] %}
+                {% if album.images.size > 0 %}
+                    <li class="nav-item">
+                        <a class="nav-link" href="/images">Images</a>
+                    </li>
+                    {% break %}
+                {% endif %}
+            {% endfor %}
+        </ul>
+    </div>
+    <!--<ul class="nav justify-content-end">
+        <li class="nav-item">
+            <input class="nav-link switch"
+                   id="theme-toggle"
+                   onclick="modeSwitcher() "
+                   type="checkbox"
+                   name="checkbox" />
+        </li>
+    </ul>-->
+</nav>

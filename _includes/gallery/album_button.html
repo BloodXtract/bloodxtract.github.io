@@ -1,0 +1,12 @@
+{% assign album = site.data.gallery[include.album_name] %}
+
+<a href="/images/{{ include.album_name }}"
+   class="gallery-thumb album-button">
+
+    <img alt="{{ album.display_name }}"
+         src="/assets/img/gallery/{{ album_hash[0] }}/{{ album.thumbnail }}" />
+    <div class="title">
+        {{ album.display_name }}
+    </div>
+    <div class="counter">{{ album.images.size }}</div>
+</a>

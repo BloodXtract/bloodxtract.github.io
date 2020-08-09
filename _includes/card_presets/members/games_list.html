@@ -1,0 +1,22 @@
+<div class="card">
+    {% if include.card_data.title %}
+        <h1>{{ include.card_data.title }}</h1>
+    {% else %}
+        <h1>Games I play</h1>
+    {% endif %}
+
+    {% for game_hash in site.data.games %}
+        {% assign game = game_hash[1] %}
+        {% assign game_code = game_hash[0] %}
+    
+        {% if game.members_playing contains include.member_code %}
+            {% include
+                game_row.html
+                game_code=game_code
+                css_class="member-card"
+                show_members_playing=false
+            %}
+        {% endif %}
+    
+    {% endfor %}
+</div>

@@ -1,0 +1,14 @@
+{
+  "display_name": "Grand Theft Auto Online",
+  "thumbnail": "1.png",
+  "tags": [ "GrandTheftAutoOnline" ],
+  "images": [
+    {
+      "remote": true,
+      "file": "https://steamuserimages-a.akamaihd.net/ugc/1482200421119681126/DCF42DEB00B84D90BF2660C0574E95AC7DE6F699/"
+    },
+    {
+      "file": "1.png"
+    }
+  ]
+}

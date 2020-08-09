@@ -1,0 +1,22 @@
+---
+layout: page
+title: Images
+---
+
+<div class="page-card col-md-11 col-center">
+    <h1 class="page-title">Image Albums</h1>
+    <h4>Here we drop our images - be it screenshots or simply other cool stuff</h4>
+
+    <div class="col-lg-12">
+        <div class="gallery-container">
+            {% for album_hash in site.data.gallery %}
+                {% assign album = album_hash[1] %}
+
+                {% if album.images.size > 0 %}
+                    {% assign album_name = album_hash[0] %}
+                    {% include gallery/album_button.html album_name=album_name %}
+                {% endif %}
+            {% endfor %}
+        </div>
+    </div>
+</div>

@@ -1,0 +1,55 @@
+{% assign game = site.data.games[include.game_code] %}
+
+<div class="game-row {{ include.css_class }}">
+    {% if include.show_game_thumbnail != false %}
+        <!-- Game thumbnail -->
+        {% if game.thumbnail %}
+            {% assign thumb = game.thumbnail %}
+        {% else %}
+            {% assign thumb = "/assets/img/placeholder.png" %}
+        {% endif %}
+
+        {% if game.local_page %}
+            <a class="thumbnail-box" href="/games/{{ game.local_page }}">
+                <img class="thumbnail" src="{{ thumb }}">
+            </a>
+        {% else %}
+            <div class="thumbnail-box">
+                <img class="thumbnail" src="{{ thumb }}">
+            </div>
+        {% endif %}
+    {% endif %}
+
+    <div class="main-box">
+        <div class="main">
+            <!-- Game name and link -->
+            <h3 class="title">
+                {% if game.local_page %}
+                    <a href="/games/{{ game.local_page }}">{{ game.name }}</a>
+                {% else %}
+                    {{ game.name }}
+                {% endif %}
+            </h3>
+
+            {% if include.text %}
+            <!-- Game short description -->
+            <p class="text">{{ include.text }}</p>
+            {% endif %}
+        </div>
+
+        {% if include.show_members_playing == true and game.members_playing.size != 0 %}
+        <!-- members playing -->
+        <p class="members">
+            Members that play:
+            {% assign member_links = "" | split: ',' %}
+            {% assign sorted_members_playing = game.members_playing | sort %}
+            {% for member_code in sorted_members_playing %}
+            {% assign member = site.data.members[member_code] %}
+            {% capture link %}<a href="/members/{{ member_code }}">{{ member.name }}</a>{% endcapture %}
+            {% assign member_links = member_links | push: link %}
+            {% endfor %}
+            {{ member_links | array_to_sentence_string }}
+        </p>
+        {% endif %}
+    </div>
+</div>
