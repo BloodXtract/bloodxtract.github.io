@@ -42,12 +42,12 @@ subtitle: Games
         </div>
 
         {% for card in page.cards_side %}
-            {% include game_page_card.html card_data=card game_code=game_code %}
+            {% include game_card_selector.html card_data=card game_code=game_code %}
         {% endfor %}
     </div>
     <div class="col-xl-9 col-lg-6 col-md-12">
         {% for card in page.cards_main %}
-            {% include game_page_card.html card_data=card game_code=game_code %}
+            {% include game_card_selector.html card_data=card game_code=game_code %}
         {% endfor %}
 
         {{ content }}

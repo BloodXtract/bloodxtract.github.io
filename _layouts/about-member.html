@@ -198,13 +198,13 @@ subtitle: Member
         </div>
 
         {% for card in page.cards_side %}
-        {% include member_page_card.html card_data=card member_code=member_code %}
+            {% include member_card_selector.html card_data=card member_code=member_code %}
         {% endfor %}
     </div>
     <div class="col-lg-7">
 
         {% for card in page.cards_main %}
-        {% include member_page_card.html card_data=card member_code=member_code %}
+            {% include member_card_selector.html card_data=card member_code=member_code %}
         {% endfor %}
 
         {{ content }}

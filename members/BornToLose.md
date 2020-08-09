@@ -5,5 +5,5 @@ menus: header
 layout: about-member
 
 cards_side:
- - preset: games
+ - preset: games_list
 ---

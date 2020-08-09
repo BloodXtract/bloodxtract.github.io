@@ -9,5 +9,5 @@ games:
  location: cards_main
 
 cards_main:
- - preset: games
+ - preset: games_list
 ---

@@ -1,0 +1,9 @@
+{% if include.card_data.include %}
+    <div class="card">
+        {% include games/{{ include.game_code }}/{{ include.card_data.include }}.html %}
+    </div>
+{% elsif include.card_data.preset %}
+    {% include card_presets/games/{{ include.card_data.preset }}.html card_data=include.card_data game_code=include.game_code %} 
+{% else %}
+    {% include card_presets/generic.html card_data=include.card_data game_code=include.game_code %}
+{% endif %}
