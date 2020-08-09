@@ -19,18 +19,18 @@ highlighter: rouge
 # pagination of posts
 paginate: 4
 per_page: 4
-paginate_path: "/blog/page/:num/"
+paginate_path: "/posts/page/:num/"
 
 collections:
   posts:
     output: true
-    permalink: /blog/:year-:month-:day/:title
+    permalink: /posts/:year-:month-:day/:title
 
 # Gallery
 defaults:
   -
     scope:
-      path: "gallery"
+      path: "images"
     values:
       permalink: /:path/:basename:output_ext
 
