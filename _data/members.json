@@ -20,11 +20,13 @@
   "BornToLose": {
     "name": "Born to Lose",
     "core": true,
-    "avatar": "https://cdn.discordapp.com/avatars/386245029943050251/267d40702d1b28f7cc8b730ee812129a.png?size=512",
+    "avatar": "/assets/img/avatars/borntolose.png",
     "email": "borntolose@bloodxtract.com",
     "usernames": {
       "discord": 386245029943050251,
-      "steam_id": "hlofriendo"
+      "steam_id": "hlofriendo",
+      "instagram": "mamoniestalkuj",
+      "youtube": "UCpRBhTmJSpvo4YhVthTQ3RQ"
     }
   },
   "Tajniak": {
