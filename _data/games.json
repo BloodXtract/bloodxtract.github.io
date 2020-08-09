@@ -4,7 +4,7 @@
     "local_page": "path-of-exile",
     "thumbnail": "/assets/img/games/thumbnails/logo-pathofexile-01.png",
     "short_description": "Path of Exile is one of the best hack'n'slash games, that's for sure! We mainly play leagues, and you're welcome to join our guild!",
-    "online_multiplayer": true,
+    "list_global": true,
 
     "urls": {
       "steam": "https://store.steampowered.com/app/238960/Path_of_Exile/",
@@ -29,7 +29,7 @@
     "name": "Grand Theft Auto Online",
     "local_page": "gta5",
     "thumbnail": "/assets/img/games/thumbnails/logo-gta5-01.png",
-    "online_multiplayer": true,
+    "list_global": true,
 
     "urls": {
       "steam": "https://store.steampowered.com/app/271590/Grand_Theft_Auto_V/",
@@ -52,7 +52,7 @@
   "DeepRockGalactic": {
     "name": "Deep Rock Galactic",
     "thumbnail": "/assets/img/games/thumbnails/logo-deeprockgalactic-01.png",
-    "online_multiplayer": true,
+    "list_global": true,
 
     "urls": {
       "steam": "https://store.steampowered.com/app/548430/Deep_Rock_Galactic/",
@@ -67,7 +67,7 @@
   "Helldivers": {
     "name": "HELLDIVERS",
     "thumbnail": "/assets/img/games/thumbnails/logo-helldivers-01.png",
-    "online_multiplayer": true,
+    "list_global": true,
 
     "urls": {
       "steam": "https://store.steampowered.com/app/394510/HELLDIVERS_Dive_Harder_Edition/",
@@ -75,13 +75,14 @@
     },
     "members_playing": [
       "TehGM",
-      "BornToLose"
+      "BornToLose",
+      "Tajniak"
     ]
   },
   "SpaceEngineers": {
     "name": "Space Engineers",
     "thumbnail": "/assets/img/games/thumbnails/logo-spaceengineers-01.png",
-    "online_multiplayer": true,
+    "list_global": true,
 
     "urls": {
       "steam": "https://store.steampowered.com/app/244850/Space_Engineers/",
@@ -92,10 +93,20 @@
       "BornToLose"
     ]
   },
+  "Avorion": {
+    "name": "Avorion",
+    "list_global": true,
+
+    "urls": {},
+    "members_playing": [
+      "TehGM",
+      "BornToLose"
+    ]
+  },
   "LeagueOfLegends": {
     "name": "League of Legends",
     "thumbnail": "/assets/img/games/thumbnails/logo-leagueoflegends-01.png",
-    "online_multiplayer": true,
+    "list_global": true,
 
     "urls": {
       "official": "https://leagueoflegends.com/"
@@ -107,7 +118,7 @@
   "Paladins": {
     "name": "Paladins",
     "thumbnail": "/assets/img/games/thumbnails/logo-paladins-01.png",
-    "online_multiplayer": true,
+    "list_global": true,
 
     "urls": {
       "steam": "https://store.steampowered.com/app/444090/Paladins/",
@@ -121,7 +132,7 @@
   "Overwatch": {
     "name": "Overwatch",
     "thumbnail": "/assets/img/games/thumbnails/logo-overwatch-01.png",
-    "online_multiplayer": true,
+    "list_global": true,
 
     "urls": {
       "official": "https://playoverwatch.com/"
@@ -134,7 +145,7 @@
   "X4Foundations": {
     "name": "X4: Foundations",
     "thumbnail": "/assets/img/games/thumbnails/logo-x4foundations-01.png",
-    "online_multiplayer": false,
+    "list_global": false,
 
     "urls": {
       "steam": "https://store.steampowered.com/app/392160/X4_Foundations/",

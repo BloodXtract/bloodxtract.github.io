@@ -12,7 +12,7 @@ title: Games We Play
 {% assign game = game_hash[1] %}
 {% assign game_code = game_hash[0] %}
 
-{% if game.online_multiplayer == true %}
+{% if game.list_global == true %}
     {% include
         game_row.html
         game_code=game_code
