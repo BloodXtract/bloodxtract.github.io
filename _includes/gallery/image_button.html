@@ -1,0 +1,25 @@
+{% assign image = include.image %}
+
+{% capture image_url %}/assets/img/gallery/{{ include.album_name }}/{{ image.file }}{% endcapture %}
+{% capture thumb_url %}/assets/img/gallery/{{ include.album_name }}/{{ image.thumbnail | default: image.file }}{% endcapture %}
+
+<a href="{{ image_url }}"
+   title="{{ image.title }}"
+   data-sub-html="#{{ image.file | slugify }}-sub"
+   class="gallery-thumb image-button">
+
+    <img alt="{{ image.file }}"
+         src="{{ thumb_url }}" />
+
+    <div id="{{ image.file | slugify }}-sub" class="gallery-sub">
+        {% if image.title %}
+        <h3 class="gallery-sub-title">{{ image.title }}</h3>
+        {% endif %}
+        {% if image.description %}
+        <span class="gallery-sub-description">{{ image.description }}</span>
+        {% endif %}
+    </div>
+    {% if image.title %}
+    <div class="title">{{ image.title }}</div>
+    {% endif %}
+</a>

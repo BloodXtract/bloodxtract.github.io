@@ -7,11 +7,23 @@
         %}
     </div>
 {% elsif include.card_data.preset %}
-    {% include card_presets/games/{{ include.card_data.preset }}.html 
-        card_data=include.card_data 
-        game_code=include.game_code 
-        is_side=include.is_side 
-    %} 
+    {% if include.card_data.preset == "related_images" %}
+        {% assign tags = include.game_code | split: ',' %}
+        {% for additonal_tag in include.additional_tags %}
+            {% assign tags = tags | push: additional_tag %}
+        {% endfor %}
+        {% include card_presets/related_images.html 
+            card_data=include.card_data 
+            tags=tags
+            is_side=include.is_side 
+        %} 
+    {% else %}
+        {% include card_presets/games/{{ include.card_data.preset }}.html 
+            card_data=include.card_data 
+            game_code=include.game_code 
+            is_side=include.is_side 
+        %} 
+    {% endif %}
 {% else %}
     {% include card_presets/generic.html 
         card_data=include.card_data 

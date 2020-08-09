@@ -360,8 +360,8 @@ $gallery-thumb-spacing: 30px;
 }
 
 
-/*** GAME PAGE ***/
-.game-page .card {
+/*** CARDS ***/
+.game-page .card, .member-page .card {
     @extend .card;
 
     .title {
@@ -440,6 +440,10 @@ $gallery-thumb-spacing: 30px;
                 margin-right: 0;
             }
         }
+    }
+
+    &.related-images .gallery-thumb {
+        max-width: 275px;
     }
 }
 

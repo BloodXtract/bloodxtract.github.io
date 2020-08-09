@@ -1,0 +1,53 @@
+{% assign card = include.card_data %}
+{% assign game = site.data.games[include.game_code] %}
+{% assign div_id = include.div_id | default: "gallery" %}
+
+{% assign items = "" | split: ',' %}
+{% for album_hash in site.data.gallery %}
+    {% assign album = album_hash[1] %}
+    {% assign album_name = album_hash[0] %}
+
+    {% assign intersect = include.tags | where_exp: "item", "album.tags contains item" %}
+    {% if intersect.size > 0 %}
+        {% capture item %}
+            {% include gallery/album_button.html album_name=album_name %}
+        {% endcapture %}
+        {% assign items = items | push: item %}
+    {% elsif album.images.size > 0 %}
+        {% for image in album.images %}
+            {% assign intersect = include.tags | where_exp: "item", "image.tags contains item" %}
+            {% if intersect.size > 0 %}
+                {% capture item %}
+                    {% include gallery/image_button.html album_name=album_name image=image %}
+                {% endcapture %}
+                {% assign items = items | push: item %}
+            {% endif %}
+        {% endfor %}
+    {% endif %}
+{% endfor %}
+
+
+
+{% if items.size > 0 %}
+<div class="card gallery-container related-images" id="{{ div_id }}">
+    {% if card.title %}
+    <h1 class="title">{{ card.title }}</h1>
+    {% else %}
+    <h1 class="title">Related Albums and Images</h1>
+    {% endif %}
+
+    {% for item in items %}
+    {{ item }}
+    {% endfor %}
+</div>
+{% endif %}
+
+
+<script type="text/javascript">
+    $(document).ready(function () {
+        $("#{{ div_id }}").lightGallery({
+            thumbnail: true,
+            loop: false,
+            selector: '.gallery-thumb.image-button'
+        });
+    });</script>

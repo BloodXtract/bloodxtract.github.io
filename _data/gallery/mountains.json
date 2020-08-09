@@ -1,12 +1,14 @@
 {
   "display_name": "Mountains",
   "thumbnail": "1.jpg",
+  "tags": [ "GrandTheftAutoOnline" ],
   "images": [
     {
       "title": "fommmmmmmmmmmmmmmmmmmmmmmmmmo",
       "description": "test",
       "file": "1.jpg",
-      "thumbnail": "1-thumbnail.jpg"
+      "thumbnail": "1-thumbnail.jpg",
+      "tags": [ "PathOfExile" ]
     },
     {
       "file": "2.jpg",
