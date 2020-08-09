@@ -5,17 +5,9 @@
 
 @import "devlopr";
 
-@media (prefers-color-scheme: dark) {
-    html,
-    html[data-theme="dark"] {
-        --button-background-color: #232323;
-        --button-highlight-color: #111;
-    }
-
-    html[data-theme="light"] {
-        --button-background-color: #fff;
-        --button-highlight-color: #ccc;
-    }
+html {
+    --button-background-color: #232323;
+    --button-highlight-color: #111;
 }
 
 a:hover {
