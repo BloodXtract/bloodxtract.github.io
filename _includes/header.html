@@ -20,32 +20,40 @@
                     {% assign members_noncore = "" | split: ',' %}
 
                     {% for member_kvp in site.data.members %}
-                        {% if member_kvp[1].core == true %}
-                            {% assign members_core = members_core | push: member_kvp %}
-                        {% else %}
-                            {% assign members_noncore = members_noncore | push: member_kvp %}
-                        {% endif %}
+                    {% if member_kvp[1].core == true %}
+                    {% assign members_core = members_core | push: member_kvp %}
+                    {% else %}
+                    {% assign members_noncore = members_noncore | push: member_kvp %}
+                    {% endif %}
                     {% endfor %}
 
 
 
                     {% for member in members_core %}
-                        <a class="dropdown-item" href="/members/{{ member[0] }}">{{ member[1].name }}</a>
+                    <a class="dropdown-item" href="/members/{{ member[0] }}">{{ member[1].name }}</a>
                     {% endfor %}
                     {% if members_core.size > 0 and members_noncore.size > 0 %}
-                        <div class="dropdown-divider"></div>
+                    <div class="dropdown-divider"></div>
                     {% endif %}
                     {% for member in members_noncore %}
-                        <a class="dropdown-item" href="/members/{{ member[0] }}">{{ member[1].name }}</a>
+                    <a class="dropdown-item" href="/members/{{ member[0] }}">{{ member[1].name }}</a>
                     {% endfor %}
                 </div>
             </li>
-            <li class="nav-item">
-                <a class="nav-link" href="/posts">Posts</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="/images">Images</a>
-            </li>
+            {% if site.posts.size > 0 %}
+                <li class="nav-item">
+                    <a class="nav-link" href="/posts">Posts</a>
+                </li>
+            {% endif %}
+            {% for album_hash in site.data.gallery %}
+                {% assign album = album_hash[1] %}
+                {% if album.images.size > 0 %}
+                    <li class="nav-item">
+                        <a class="nav-link" href="/images">Images</a>
+                    </li>
+                    {% break %}
+                {% endif %}
+            {% endfor %}
         </ul>
     </div>
     <!--<ul class="nav justify-content-end">
