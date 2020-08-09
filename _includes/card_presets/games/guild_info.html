@@ -16,7 +16,12 @@
         {% if game.guild.thumbnail %}
         <img class="thumbnail" src="{{ game.guild.thumbnail }}" />
         {% endif %}
-        <p class="name">{{ game.guild.name }}</p>
+        <p class="name">
+            {{ game.guild.name }}
+            {% if game.guild.tag %}
+                [{{ game.guild.tag }}]
+            {% endif %}
+        </p>
         {% if game.guild.url %}
     </a>
     {% endif %}
