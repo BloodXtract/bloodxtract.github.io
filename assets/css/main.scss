@@ -1,4 +1,4 @@
----
+﻿---
 ---
 
 @charset "utf-8";
@@ -142,7 +142,7 @@ footer {
         background-color: var(--button-highlight-color);
     }
 
-    &:focus, &:visited {
+    &:focus {
         box-shadow: none;
         color: var(--link-color-visited);
         border: 1px solid var(--link-color);
@@ -151,7 +151,6 @@ footer {
 
 .dropdown-divider {
     border-top: 1px dashed rgba(0, 0, 0, 0.45);
-    /*margin: 0;*/
 }
 
 
