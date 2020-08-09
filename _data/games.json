@@ -95,9 +95,13 @@
   },
   "Avorion": {
     "name": "Avorion",
+    "thumbnail": "/assets/img/games/thumbnails/logo-avorion-01.png",
     "list_global": true,
 
-    "urls": {},
+    "urls": {
+      "steam": "https://store.steampowered.com/app/445220/Avorion/",
+      "official": "https://www.avorion.net/"
+    },
     "members_playing": [
       "TehGM",
       "BornToLose"
