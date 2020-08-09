@@ -32,12 +32,17 @@
   "Tajniak": {
     "name": "Tajniak",
     "core": true,
-    "avatar": "https://cdn.discordapp.com/avatars/377903467676696577/afb334271aa3b3dd1dcff62d1217df41.png?size=512",
+    "avatar": "/assets/img/avatars/tajniak.png",
     "email": "tajniak@bloodxtract.com",
     "usernames": {
       "github": "MarcinK-ski",
       "discord": 377903467676696577,
-      "steam": 76561197998228588
+      "steam": 76561197998228588,
+      "reddit": "TajniakoO",
+      "twitch": "tajniakoo",
+      "youtube": "UCB3KxKSt0DqJPB3beJANqSQ",
+      "snapchat": "tajniakoo",
+      "spotify": "kalik95"
     }
   }
 }
