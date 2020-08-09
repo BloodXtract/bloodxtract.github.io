@@ -4,6 +4,6 @@ title: Born to Lose
 menus: header
 layout: about-member
 
-cards_side:
+cards_main:
  - preset: games_list
 ---
