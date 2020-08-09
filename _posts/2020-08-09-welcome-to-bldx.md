@@ -4,6 +4,7 @@ title: "Welcome to BloodXtract Team page"
 summary: Introduction to BloodXtract Team
 author: TehGM
 date: '2020-08-09 12:40:23'
+thumbnail: /assets/img/posts/SpaceCat_80.png
 ---
 Welcome to our home page!
 

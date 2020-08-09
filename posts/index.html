@@ -9,7 +9,7 @@ layout: default
                 <div class="row">
                     {% for post in paginator.posts %}
                     <a href="{{ post.url }}" class="card blog-post-preview">
-                        <img class="card-img-top" src="{{site.url}}{{site.baseurl}}{{ post.thumbnail }}" alt="{{ post.title }}">
+                        <img class="post-thumb" src="{{site.url}}{{site.baseurl}}{{ post.thumbnail }}" alt="{{ post.title }}">
                         <div class="card-body center">
                             <h4 class="card-title">{{ post.title }}</h4>
 
