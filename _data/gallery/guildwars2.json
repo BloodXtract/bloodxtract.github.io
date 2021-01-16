@@ -7,6 +7,11 @@
   "tags": [ "GuildWars2" ],
   "images": [
     {
+      "remote": true,
+      "file": "https://steamuserimages-a.akamaihd.net/ugc/27367103393456056/4BE06EE99659F73800D29D255780F94949FCD7D7/",
+      "description": "Pre-expansions Guild Wars 2<br/>Member: <a href='/members/TehGM'>TehGM</a> as Erevate"
+    },
+    {
       "remote": false,
       "file": "gw001.jpg",
       "title": "Sylvari pilgrimage",
