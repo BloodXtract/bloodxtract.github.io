@@ -45,5 +45,13 @@
       "snapchat": "tajniakoo",
       "spotify": "kalik95"
     }
+  },
+  "TheDutchMagikarp": {
+    "name": "TheDutchMagikarp",
+    "avatar": "/assets/img/avatars/dutchmagikarp.png",
+    "usernames": {
+      "discord": 135088614035030016,
+      "steam_id": "thedutchmagikarp"
+    }
   }
 }
