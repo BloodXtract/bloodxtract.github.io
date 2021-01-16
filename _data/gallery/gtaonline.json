@@ -1,6 +1,8 @@
 {
   "display_name": "Grand Theft Auto Online",
-  "thumbnail": "1.png",
+  "thumbnail": {
+    "file": "1.png"
+  },
   "tags": [ "GrandTheftAutoOnline" ],
   "images": [
     {

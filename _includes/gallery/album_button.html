@@ -1,10 +1,15 @@
 {% assign album = site.data.gallery[include.album_name] %}
 
+{% if album.thumbnail.remote %}
+    {% capture thumb_url %}{{ album.thumbnail.file }}{% endcapture %}
+{% else %}
+    {% capture thumb_url %}/assets/img/gallery/{{ album_hash[0] }}/{{ album.thumbnail.file }}{% endcapture %}
+{% endif %}
+
 <a href="/images/{{ include.album_name }}"
    class="gallery-thumb album-button">
 
-    <img alt="{{ album.display_name }}"
-         src="/assets/img/gallery/{{ album_hash[0] }}/{{ album.thumbnail }}" />
+    <img alt="{{ album.display_name }}" src="{{ thumb_url }}" />
     <div class="title">
         {{ album.display_name }}
     </div>
