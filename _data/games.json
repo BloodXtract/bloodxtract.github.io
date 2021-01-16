@@ -26,31 +26,6 @@
       ]
     }
   },
-  "GrandTheftAutoOnline": {
-    "name": "Grand Theft Auto Online",
-    "local_page": "gta5",
-    "thumbnail": "/assets/img/games/thumbnails/logo-gta5-01.png",
-    "list_global": true,
-
-    "urls": {
-      "steam": "https://store.steampowered.com/app/271590/Grand_Theft_Auto_V/",
-      "official": "https://www.rockstargames.com/GTAOnline/"
-    },
-    "members_playing": [
-      "TehGM",
-      "Tajniak"
-    ],
-    "guild": {
-      "url": "https://socialclub.rockstargames.com/crew/bloodxtract/wall",
-      "thumbnail": "https://prod.cloud.rockstargames.com/crews/sc/0555/39989844/publish/emblem/emblem_128.png",
-      "name": "BloodXtract",
-      "tag": "BLDX",
-      "open": true,
-      "recruiters": [
-        "TehGM"
-      ]
-    }
-  },
   "GuildWars2": {
     "name": "Guild Wars 2",
     "local_page": "gw2",
@@ -74,6 +49,31 @@
       "recruiters": [
         "TehGM",
         "BornToLose"
+      ]
+    }
+  },
+  "GrandTheftAutoOnline": {
+    "name": "Grand Theft Auto Online",
+    "local_page": "gta5",
+    "thumbnail": "/assets/img/games/thumbnails/logo-gta5-01.png",
+    "list_global": true,
+
+    "urls": {
+      "steam": "https://store.steampowered.com/app/271590/Grand_Theft_Auto_V/",
+      "official": "https://www.rockstargames.com/GTAOnline/"
+    },
+    "members_playing": [
+      "TehGM",
+      "Tajniak"
+    ],
+    "guild": {
+      "url": "https://socialclub.rockstargames.com/crew/bloodxtract/wall",
+      "thumbnail": "https://prod.cloud.rockstargames.com/crews/sc/0555/39989844/publish/emblem/emblem_128.png",
+      "name": "BloodXtract",
+      "tag": "BLDX",
+      "open": true,
+      "recruiters": [
+        "TehGM"
       ]
     }
   },
