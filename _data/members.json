@@ -53,5 +53,12 @@
       "discord": 135088614035030016,
       "steam_id": "thedutchmagikarp"
     }
+  },
+  "Keldingull": {
+    "name": "Keli",
+    "avatar": "/assets/img/avatars/keldingull.png",
+    "usernames": {
+      "discord": 472918550223519764
+    }
   }
 }
