@@ -8,13 +8,15 @@
     {% capture thumb_url %}/assets/img/gallery/{{ include.album_name }}/{{ image.thumbnail | default: image.file }}{% endcapture %}
 {% endif %}
 
-<a href="{{ image_url }}"
-   title="{{ image.title }}"
-   data-sub-html="#{{ image.file | slugify }}-sub"
-   class="gallery-thumb image-button">
+<div class="gallery-thumb image-button"
+     href="{{ image_url }}"
+     title="{{ image.tooltip }}"
+     data-sub-html="#{{ image.file | slugify }}-sub">
 
-    <img alt="{{ image.file }}"
-         src="{{ thumb_url }}" />
+    <img alt="{{ image.file }}" src="{{ thumb_url }}" />
+    {% if image.title %}
+        <div class="title">{{ image.title }}</div>
+    {% endif %}
 
     <div id="{{ image.file | slugify }}-sub" class="gallery-sub">
         {% if image.title %}
@@ -24,7 +26,4 @@
         <span class="gallery-sub-description">{{ image.description }}</span>
         {% endif %}
     </div>
-    {% if image.title %}
-    <div class="title">{{ image.title }}</div>
-    {% endif %}
-</a>
+</div>
