@@ -30,6 +30,7 @@
     "name": "Guild Wars 2",
     "local_page": "gw2",
     "thumbnail": "/assets/img/games/thumbnails/logo-gw2-01.png",
+    "short_description": "Guild Wars 2 is one of the most casual-friendly MMOs out there. It makes it a perfect fit fur us!",
     "list_global": true,
 
     "urls": {
@@ -56,6 +57,7 @@
     "name": "Grand Theft Auto Online",
     "local_page": "gta5",
     "thumbnail": "/assets/img/games/thumbnails/logo-gta5-01.png",
+    "short_description": "GTA Online might have a lot of flaws due to Rockstar's greed and carelessness, but it is really fun to play with friends. Especially if you start shooting each other!",
     "list_global": true,
 
     "urls": {
@@ -80,6 +82,7 @@
   "DeepRockGalactic": {
     "name": "Deep Rock Galactic",
     "thumbnail": "/assets/img/games/thumbnails/logo-deeprockgalactic-01.png",
+    "short_description": "Deep Rock Galactic is one of the best coop games out there. Takes a lot from Left 4 Dead - but it's fine when it's done right.",
     "list_global": true,
 
     "urls": {
@@ -192,6 +195,7 @@
   "Stellaris": {
     "name": "Stellaris",
     "thumbnail": "/assets/img/games/thumbnails/logo-stellaris-01.png",
+    "short_description": "Definitely one of the best grand strategy games ever. One more turn syndrome is real - except without the turns.",
     "list_global": false,
 
     "urls": {
