@@ -187,5 +187,18 @@
     "members_playing": [
       "TehGM"
     ]
+  },
+  "Stellaris": {
+    "name": "Stellaris",
+    "thumbnail": "/assets/img/games/thumbnails/logo-stellaris-01.png",
+    "list_global": false,
+
+    "urls": {
+      "steam": "https://store.steampowered.com/app/281990/Stellaris/",
+      "official": "https://www.paradoxplaza.com/stellaris/STST01G-MASTER.html"
+    },
+    "members_playing": [
+      "TehGM"
+    ]
   }
 }
