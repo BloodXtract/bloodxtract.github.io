@@ -9,7 +9,7 @@ thumbnail: /assets/img/posts/GalleryScreenshot_02.png
 This website launched with an [Images gallery](/images), but we only had 2 random GTA Online images there.
 
 Now, that's changed. I've gone through my steam media, as well as a fair bit of my local drive screenshots, and then added them to this website.  
-As a result, our [Images gallery](/images) now has a total of ***174*** (!) new images from multiple games, for example [Guild Wars 2](/games/guildwars2), EVE Online and others. And I hope it'll get even more as the time goes!
+As a result, our [Images gallery](/images) now has a total of ***173*** (!) new images from multiple games, for example [Guild Wars 2](/games/guildwars2), EVE Online and others. And I hope it'll get even more as the time goes!
 
 ---
 
