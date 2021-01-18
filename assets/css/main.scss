@@ -407,6 +407,22 @@ $gallery-thumb-spacing: 30px;
         }
     }
 
+    &.gaming-rig .item {
+
+        display: flex;
+        flex-direction: row;
+
+        .key {
+            font-weight: bolder;
+            padding-right: 5px;
+        }
+
+        .value {
+            @extend .text;
+            font-style: italic;
+        }
+    }
+
     &.members-playing-list {
         display: flex;
         flex-direction: row;

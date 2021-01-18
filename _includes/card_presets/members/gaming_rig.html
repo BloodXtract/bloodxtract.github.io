@@ -1,0 +1,114 @@
+{% assign card=include.card_data %}
+{% assign div_id = include.div_id | default: "gaming-rig" %}
+
+<div class="card gaming-rig">
+    {% if card.title %}
+    <h1 class="title">{{ card.title }}</h1>
+    {% else %}
+    <h1 class="title">Gaming Rig</h1>
+    {% endif %}
+
+    {% if card.model %}
+    <p class="item">
+        <span class="key">Model:</span>
+        <span class="value">{{ card.model }}</span>
+    </p>
+    {% endif %}
+    {% if card.motherboard %}
+    <p class="item">
+        <span class="key">Motherboard:</span>
+        <span class="value">{{ card.motherboard }}</span>
+    </p>
+    {% endif %}
+    {% if card.cpu %}
+    <p class="item">
+        <span class="key">CPU:</span>
+        <span class="value">{{ card.cpu }}</span>
+    </p>
+    {% endif %}
+    {% if card.gpu %}
+    <p class="item">
+        <span class="key">GPU:</span>
+        <span class="value">{{ card.gpu }}</span>
+    </p>
+    {% endif %}
+    {% if card.ram %}
+    <p class="item">
+        <span class="key">RAM:</span>
+        <span class="value">
+            {% if card.ram.first %}
+                {% for ram in card.ram %}
+                    {% if ram.size > 1 %}&bull; {% endif %}{{ ram }}<br />
+                {% endfor %}
+            {% else %}
+                {{ card.ram }}
+            {% endif %}
+        </span>
+        {{ card.rams.size }}
+    </p>
+    {% endif %}
+    {% if card.drive %}
+    <p class="item">
+        <span class="key">Storage:</span>
+        <span class="value">
+            {% if card.drive.first %}
+                {% for drive in card.drive %}
+                    {% if card.drive.size != 1 %}&bull; {% endif %}{{ drive }}<br />
+                {% endfor %}
+            {% else %}
+                {{ card.drive }}
+            {% endif %}
+        </span>
+    </p>
+    {% endif %}
+    {% if card.monitor %}
+    <p class="item">
+        <span class="key">Monitors:</span>
+        <span class="value">
+            {% if card.monitor.first %}
+                {% for monitor in card.monitor %}
+                    {% if card.monitor.size != 1 %}&bull; {% endif %}{{ monitor }}<br />
+                {% endfor %}
+            {% else %}
+                {{ card.monitor }}
+            {% endif %}
+        </span>
+    </p>
+    {% endif %}
+    {% if card.soundcard %}
+    <p class="item">
+        <span class="key">Sound:</span>
+        <span class="value">{{ card.soundcard }}</span>
+    </p>
+    {% endif %}
+    {% if card.networkcard %}
+    <p class="item">
+        <span class="key">Network Adapter:</span>
+        <span class="value">{{ card.networkcard }}</span>
+    </p>
+    {% endif %}
+    {% if card.keyboard %}
+    <p class="item">
+        <span class="key">Keyboard:</span>
+        <span class="value">{{ card.keyboard }}</span>
+    </p>
+    {% endif %}
+    {% if card.mouse %}
+    <p class="item">
+        <span class="key">Mouse:</span>
+        <span class="value">{{ card.mouse }}</span>
+    </p>
+    {% endif %}
+    {% if card.headset %}
+    <p class="item">
+        <span class="key">Headset:</span>
+        <span class="value">{{ card.headset }}</span>
+    </p>
+    {% endif %}
+    {% if card.microphone %}
+    <p class="item">
+        <span class="key">Microphone:</span>
+        <span class="value">{{ card.microphone }}</span>
+    </p>
+    {% endif %}
+</div>
