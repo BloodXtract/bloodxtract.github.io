@@ -96,6 +96,22 @@
       "Tajniak"
     ]
   },
+  "Deathtrap": {
+    "name": "Deathtrap",
+    "thumbnail": "/assets/img/games/thumbnails/logo-deathtrap-01.webp",
+    "short_description": "PoE-style aRPG mixed with Tower Defense? Surprisingly good! This is the hidden gem that managed to scratch our TD itch.",
+    "list_global": true,
+
+    "urls": {
+      "steam": "https://store.steampowered.com/app/310510/Deathtrap/",
+      "official": "https://neocoregames.com/en/games/deathtrap/overview"
+    },
+    "members_playing": [
+      "TehGM",
+      "BornToLose",
+      "Tajniak"
+    ]
+  },
   "Helldivers": {
     "name": "HELLDIVERS",
     "thumbnail": "/assets/img/games/thumbnails/logo-helldivers-01.png",
