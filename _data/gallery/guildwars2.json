@@ -15,13 +15,15 @@
       "remote": false,
       "file": "gw001.jpg",
       "title": "Sylvari pilgrimage",
-      "description": "<a href='/members/TehGM'>TehGM</a> and <a href='/members/BornToLose'>Born to Lose</a> decided to go for a long walk through Caledon Forest"
+      "description": "<a href='/members/TehGM'>TehGM</a> and <a href='/members/BornToLose'>Born to Lose</a> decided to go for a long walk through Caledon Forest",
+      "tags": [ "TehGM", "BornToLose" ]
     },
     {
       "remote": false,
       "file": "gw008.jpg",
       "title": "Sylvari pilgrimage",
-      "description": "<a href='/members/TehGM'>TehGM</a> and <a href='/members/BornToLose'>Born to Lose</a> decided to go for a long walk through Caledon Forest"
+      "description": "<a href='/members/TehGM'>TehGM</a> and <a href='/members/BornToLose'>Born to Lose</a> decided to go for a long walk through Caledon Forest",
+      "tags": [ "TehGM", "BornToLose" ]
     },
     {
       "remote": false,
@@ -32,7 +34,8 @@
     {
       "remote": false,
       "file": "gw046.jpg",
-      "title": "Perfect petrification"
+      "title": "Perfect petrification",
+      "tags": [ "TehGM" ]
     },
     {
       "remote": false,
@@ -42,7 +45,8 @@
       "remote": false,
       "file": "gw078.jpg",
       "title": "Young Karka hunting",
-      "description": "Member: <a href='/members/TehGM'>TehGM</a> as Erevate"
+      "description": "Member: <a href='/members/TehGM'>TehGM</a> as Erevate",
+      "tags": [ "TehGM" ]
     },
     {
       "remote": false,
@@ -93,12 +97,14 @@
     {
       "remote": false,
       "file": "gw205.jpg",
-      "description": "Member: <a href='/members/TehGM'>TehGM</a> as Erevate"
+      "description": "Member: <a href='/members/TehGM'>TehGM</a> as Erevate",
+      "tags": [ "TehGM" ]
     },
     {
       "remote": false,
       "file": "gw209.jpg",
-      "description": "Member: <a href='/members/TehGM'>TehGM</a> as Erevate"
+      "description": "Member: <a href='/members/TehGM'>TehGM</a> as Erevate",
+      "tags": [ "TehGM" ]
     },
     {
       "remote": false,
@@ -119,7 +125,8 @@
       "remote": false,
       "file": "gw245.jpg",
       "title": "Feelin' like a queen",
-      "description": "Member: <a href='/members/TehGM'>TehGM</a> as Erevate"
+      "description": "Member: <a href='/members/TehGM'>TehGM</a> as Erevate",
+      "tags": [ "TehGM" ]
     },
     {
       "remote": false,
@@ -165,13 +172,15 @@
       "remote": false,
       "file": "gw345.jpg",
       "title": "Shortest and tall norns",
-      "description": "Members: <a href='/members/TehGM'>TehGM</a> as Erevate, <a href='/members/Keldingull'>Keli</a> as Hrefna Kolbrun"
+      "description": "Members: <a href='/members/TehGM'>TehGM</a> as Erevate, <a href='/members/Keldingull'>Keli</a> as Hrefna Kolbrun",
+      "tags": [ "Keldingull" ]
     },
     {
       "remote": false,
       "file": "gw349.jpg",
       "title": "Going out of Bounds",
-      "description": "Location: Blazeridge Steppes<br/>Members: <a href='/members/TehGM'>TehGM</a> as Erevate, <a href='/members/Keldingull'>Keli</a> as Hrefna Kolbrun"
+      "description": "Location: Blazeridge Steppes<br/>Members: <a href='/members/TehGM'>TehGM</a> as Erevate, <a href='/members/Keldingull'>Keli</a> as Hrefna Kolbrun",
+      "tags": [ "Keldingull" ]
     },
     {
       "remote": false,

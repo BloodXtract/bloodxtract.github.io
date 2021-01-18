@@ -11,7 +11,8 @@
     },
     {
       "file": "1.png",
-      "description": "<a href='/members/Tajniak'>Tajniak</a> and <a href='/members/TehGM'>TehGM</a> before heist!"
+      "description": "<a href='/members/Tajniak'>Tajniak</a> and <a href='/members/TehGM'>TehGM</a> before heist!",
+      "tags": [ "TehGM", "Tajniak" ]
     }
   ]
 }

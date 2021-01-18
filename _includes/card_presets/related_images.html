@@ -36,9 +36,15 @@
     <h1 class="title">Related Albums and Images</h1>
     {% endif %}
 
-    {% for item in items %}
-    {{ item }}
-    {% endfor %}
+    {% if card.limit %}
+        {% for item in items limit:card.limit %}
+        {{ item }}
+        {% endfor %}
+    {% else %}
+        {% for item in items %}
+        {{ item }}
+        {% endfor %}
+    {% endif %}
 </div>
 {% endif %}
 
