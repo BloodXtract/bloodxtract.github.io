@@ -12,8 +12,8 @@ cards_side:
    gpu: Nvidia Geforce GTX 1060
    ram: Kingston HyperX Predator CL16 16GB
    drive:
-    - Samsung EVO 960 250MB (M2 SSD - 3200MB/s read, 1900MB/s write)
-    - Seagate Barracuda 1TB (SATA HDD - 7200rpm)
+    - Samsung EVO 960 250MB
+    - Seagate Barracuda 1TB 7200rpm
    monitor:
     - LG 22MA53 (22", 1080p, 75Hz, 5ms IPS)
     - ACER Nitro VG270UBMIIPX (27", 1440p, 75Hz, 1ms IPS, FreeSync)
