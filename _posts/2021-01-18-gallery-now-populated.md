@@ -15,6 +15,8 @@ As a result, our [Images gallery](/images) now has a total of ***174*** (!) new 
 
 Many new screenshots is the biggest change on the website, but there's also some more smaller updates:
 - [TheDutchMagikarp](/members/TheDutchMagikarp) and [Keli](/members/Keldingull) now have their member pages.
+- [TehGM](/members/TehGM) and [Tajniak](/members/Tajniak) now have their gaming rig card on their pages.
 - [Guild Wars 2](/games/guildwars2) now has some content on its page.
 - Multiple games on [games list](/games) now have short descriptions.
+- Members can also have related images on their page.
 - Some other small tweaks!
