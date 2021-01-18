@@ -1,5 +1,5 @@
 ---
 layout: album
-title: 'Elite: Dangerous'
+title: "Album: Elite: Dangerous"
 album_name: elitedangerous
 ---

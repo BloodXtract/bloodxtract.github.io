@@ -1,5 +1,5 @@
 ---
 layout: album
-title: EVE Online
+title: "Album: EVE Online"
 album_name: eveonline
 ---

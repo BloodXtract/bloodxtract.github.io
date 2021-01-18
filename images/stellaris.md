@@ -1,5 +1,5 @@
 ---
 layout: album
-title: Stellaris
+title: "Album: Stellaris"
 album_name: stellaris
 ---

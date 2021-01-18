@@ -1,5 +1,5 @@
 ---
 layout: album
-title: GuildWars2
+title: "Album: Guild Wars 2"
 album_name: guildwars2
 ---

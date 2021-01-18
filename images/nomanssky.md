@@ -1,5 +1,5 @@
 ---
 layout: album
-title: No Man's Sky
+title: "Album: No Man's Sky"
 album_name: nomanssky
 ---

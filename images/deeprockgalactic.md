@@ -1,5 +1,5 @@
 ---
 layout: album
-title: Deep Rock Galactic
+title: "Album: Deep Rock Galactic"
 album_name: deeprockgalactic
 ---
