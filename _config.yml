@@ -24,7 +24,7 @@ paginate_path: "/posts/page/:num/"
 collections:
   posts:
     output: true
-    permalink: /posts/:year-:month-:day/:title
+    permalink: /posts/:title
 
 # Gallery
 defaults:
