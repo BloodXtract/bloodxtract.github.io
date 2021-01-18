@@ -161,11 +161,16 @@ footer {
 
 
 /*** BLOG POSTS ***/
+#blog-posts-container .row {
+    justify-content: center;
+}
+
 .blog-post-preview {
     @extend .blog-post-preview !optional;
     @include box-hover-highlight;
     color: unset;
     max-width: 31%;
+    margin: 20px;
 
     &:hover {
         text-decoration: none;
