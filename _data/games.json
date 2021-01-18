@@ -190,7 +190,7 @@
   "Overwatch": {
     "name": "Overwatch",
     "thumbnail": "/assets/img/games/thumbnails/logo-overwatch-01.png",
-    "short_thumbnail": "Yes, we suck at it. But does it matter? We'll just pick all junkrat team and have fun!",
+    "short_description": "Yes, we suck at it. But does it matter? We'll just pick all junkrat team and have fun!",
     "list_global": true,
 
     "urls": {
