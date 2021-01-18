@@ -115,6 +115,7 @@
   "Helldivers": {
     "name": "HELLDIVERS",
     "thumbnail": "/assets/img/games/thumbnails/logo-helldivers-01.png",
+    "short_description": "A very cool twin-stick shooter coop. Challenging too. Hey, even filthy casuals want a challenge sometimes.",
     "list_global": true,
 
     "urls": {
@@ -130,6 +131,7 @@
   "SpaceEngineers": {
     "name": "Space Engineers",
     "thumbnail": "/assets/img/games/thumbnails/logo-spaceengineers-01.png",
+    "short_description": "We like spaceships. We like to build things. We like to crash things. This game provides it all!",
     "list_global": true,
 
     "urls": {
@@ -144,6 +146,7 @@
   "Avorion": {
     "name": "Avorion",
     "thumbnail": "/assets/img/games/thumbnails/logo-avorion-01.png",
+    "short_description": "Large galaxy, easy building, fleet and station owning, and multiplayer. Need to say more?",
     "list_global": true,
 
     "urls": {
@@ -171,6 +174,7 @@
   "Paladins": {
     "name": "Paladins",
     "thumbnail": "/assets/img/games/thumbnails/logo-paladins-01.png",
+    "short_description": "Some say that this is poor man's Overwatch. But we think it is different as it allows creating own builds. Plus it's free!",
     "list_global": true,
 
     "urls": {
@@ -186,6 +190,7 @@
   "Overwatch": {
     "name": "Overwatch",
     "thumbnail": "/assets/img/games/thumbnails/logo-overwatch-01.png",
+    "short_thumbnail": "Yes, we suck at it. But does it matter? We'll just pick all junkrat team and have fun!",
     "list_global": true,
 
     "urls": {
