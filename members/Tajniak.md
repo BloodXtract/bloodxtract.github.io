@@ -9,7 +9,7 @@ cards_side:
  - preset: gaming_rig
    motherboard: GL Asrock Z370 PRO4
    cpu: Intel Core i7 8700
-   gpu: Nvidia Geforce GTX 1060
+   gpu: Nvidia Geforce GTX 1060 6GB
    ram: Kingston HyperX Predator CL16 16GB
    drive:
     - Samsung EVO 960 250MB
