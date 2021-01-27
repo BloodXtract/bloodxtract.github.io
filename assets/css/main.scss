@@ -367,6 +367,21 @@ $gallery-thumb-spacing: 30px;
 }
 
 
+/*** KVP LIST ***/
+.kvp-item {
+    display: flex;
+    flex-direction: row;
+
+    .key {
+        padding-right: 5px;
+    }
+
+    .value {
+        @extend .text;
+    }
+}
+
+
 /*** CARDS ***/
 .game-page .card, .member-page .card {
     @extend .card;
@@ -407,18 +422,12 @@ $gallery-thumb-spacing: 30px;
         }
     }
 
-    &.gaming-rig .item {
-
-        display: flex;
-        flex-direction: row;
-
+    &.gaming-rig .kvp-item {
         .key {
             font-weight: bolder;
-            padding-right: 5px;
         }
 
         .value {
-            @extend .text;
             font-style: italic;
         }
     }
