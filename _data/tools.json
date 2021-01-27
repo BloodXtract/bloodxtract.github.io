@@ -20,6 +20,24 @@
       "description": "An extended version Path of Building, a tool designed to plan Path of Exile builds, view stats, tweak your build etc. A must-have if you plan to play PoE any seriously."
     },
     {
+      "name": "FilterBlade",
+      "url": "http://filterblade.xyz/",
+      "category": "PathOfExile",
+      "description": "Path of Exile features an <a href='https://pathofexile.gamepedia.com/Item_filter'>Item Filter</a> feature that allows you to highlight item drops that you're interested in, while hiding the ones you want to ignore. FilterBlade is the most powerful Item Filter customizer for PoE."
+    },
+    {
+      "name": "poe.ninja",
+      "url": "https://poe.ninja/",
+      "category": "PathOfExile",
+      "description": "a PoE economy tracking and analysing website. Very useful for determining currency exchange rates."
+    },
+    {
+      "name": "Path of Exile Trade",
+      "url": "https://www.pathofexile.com/trade/",
+      "category": "PathOfExile",
+      "description": "PoE doesn't feature built-in Auction House or anything like that. Instead, there's an official website for public stash tab-based trading, which lists current sell offers automatically."
+    },
+    {
       "name": "Quality Recipe Calculator",
       "url": "https://github.com/TehGM/PoE-QualityRecipesCalculator",
       "category": "PathOfExile",
@@ -32,6 +50,18 @@
       "url": "http://gw2timer.com/",
       "category": "GuildWars2",
       "description": "An interactive map for tracking World Bosses and Meta Events, as well as finding resource nodes and Jumping Puzzles. Also features checklists that reset daily or weekly."
+    },
+    {
+      "name": "GW2 Efficiency",
+      "url": "https://gw2efficiency.com/",
+      "category": "GuildWars2",
+      "description": "A very useful tool for listing all items required for crafting, and not only. Virtually a must-have if you want to craft your legendary. Also, there's a lottery that you can win cool items in!"
+    },
+    {
+      "name": "GW2TP",
+      "url": "https://www.gw2tp.com/",
+      "category": "GuildWars2",
+      "description": "A trading post website for Guild Wars 2. Allows tracking prices, demand and volume of items on in-game market, both using current and historical data."
     }
   ]
 }
