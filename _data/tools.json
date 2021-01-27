@@ -3,8 +3,7 @@
     "PathOfExile": {
       "game_code": "PathOfExile",
       "header": "Path of Exile Tools",
-      "nav": "Path of Exile",
-      "description": "PoE tools"
+      "nav": "Path of Exile"
     },
     "GuildWars2": {
       "game_code": "GuildWars2",
