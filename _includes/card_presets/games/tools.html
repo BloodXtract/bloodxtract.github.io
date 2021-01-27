@@ -2,6 +2,7 @@
 {% for category_hash in site.data.tools.categories %}
     {% assign category = category_hash[1] %}
     {% if category.game_code == include.game_code %}
+        {% assign tools_category_id = category_hash[0] %}
         {% assign tools_category = category %}
         {% break %}
     {% endif %}
@@ -15,6 +16,6 @@
     <h1 class="title">Tools</h1>
     {% endif %}
 
-    <p class="text">Click <a href="/tools/#{{ tools_category.header | slugify}}">HERE</a> to view our list of recommended tools for this game!</p>
+    <p class="text">Click <a href="/tools/#{{ tools_category_id | slugify}}">HERE</a> to view our list of recommended tools for this game!</p>
 </div>
 {% endif %}

@@ -9,8 +9,9 @@ subtitle: Tools
     <div class="side card col-xl-2 col-lg-5 col-md-12">
         <h3 class="title">Tools Categories</h3>
         {% for category_hash in tools.categories %}
+            {% assign category_id = category_hash[0] %}
             {% assign category = category_hash[1] %}
-            <a href="#{{ category.header | slugify }}">{{ category.nav }}</a>
+            <a href="#{{ category_id | slugify }}">{{ category.nav }}</a>
         {% endfor %}
     </div>
     <div class="card col-xl-9 col-lg-6 col-md-12">
@@ -21,7 +22,7 @@ subtitle: Tools
         {% for category_hash in tools.categories %}
             {% assign category_id = category_hash[0] %}
             {% assign category = category_hash[1] %}
-            <h2>{{ category.header | default: category.nav }}</h2>
+            <h2 id="{{ category_id | slugify }}">{{ category.header | default: category.nav }}</h2>
             {% if category.description %}
                 <p class="text">{{ category.description }}</p>
             {% endif %}
