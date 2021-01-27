@@ -1,0 +1,43 @@
+---
+layout: page
+subtitle: Tools
+---
+
+{% assign tools = site.data.tools %}
+
+<div class="row tools-listing">
+    <div class="side card col-xl-2 col-lg-5 col-md-12">
+        <h3 class="title">Tools Categories</h3>
+        {% for category_hash in tools.categories %}
+            {% assign category = category_hash[1] %}
+            <a href="#{{ category.header | slugify }}">{{ category.nav }}</a>
+        {% endfor %}
+    </div>
+    <div class="card col-xl-9 col-lg-6 col-md-12">
+        <h1>Tools Listing</h1>
+        <p class="text">There are many third-party tools for games (and not only). Here we list some of our recommendations.</p>
+        <p class="text">This list is not exhaustive, it's not mandatory tools, or anything like that. This is just a list for reference.</p>
+
+        {% for category_hash in tools.categories %}
+            {% assign category_id = category_hash[0] %}
+            {% assign category = category_hash[1] %}
+            <h2>{{ category.header | default: category.nav }}</h2>
+            {% if category.description %}
+                <p class="text">{{ category.description }}</p>
+            {% endif %}
+            
+            <table class="kvp">
+                {% for tool in tools.tools %}
+                    {% if tool.category == category_id %}
+                        <tr>
+                            <td class="key"><a href="{{ tool.url }}">{{ tool.name }}</a></td>
+                            {% if tool.description %}
+                                <td class="value">{{ tool.description }}</td>
+                            {% endif %}
+                        </tr>
+                    {% endif %}
+                {% endfor %}
+            </table>
+        {% endfor %}
+    </div>
+</div>

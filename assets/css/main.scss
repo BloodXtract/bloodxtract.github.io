@@ -371,13 +371,37 @@ $gallery-thumb-spacing: 30px;
 .kvp-item {
     display: flex;
     flex-direction: row;
+}
 
+table.kvp {
+    tr {
+        vertical-align: top;
+    }
+}
+
+.kvp, .kvp-item{
     .key {
         padding-right: 5px;
     }
 
     .value {
         @extend .text;
+    }
+}
+
+
+/*** TOOLS LISTING ***/
+.tools-listing {
+    h2 {
+        margin-top: 2rem;
+    }
+
+    table td {
+        padding-bottom: 15px;
+
+        &.key {
+            width: 200px;
+        }
     }
 }
 

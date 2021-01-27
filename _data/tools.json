@@ -1,0 +1,37 @@
+{
+  "categories": {
+    "PathOfExile": {
+      "game_code": "PathOfExile",
+      "header": "Path of Exile Tools",
+      "nav": "Path of Exile",
+      "description": "PoE tools"
+    },
+    "GuildWars2": {
+      "game_code": "GuildWars2",
+      "header": "Guild Wars 2 Tools",
+      "nav": "Guild Wars 2"
+    }
+  },
+  "tools": [
+    {
+      "name": "Path of Building - Community Fork",
+      "url": "https://pathofbuilding.community/",
+      "category": "PathOfExile",
+      "description": "An extended version Path of Building, a tool designed to plan Path of Exile builds, view stats, tweak your build etc. A must-have if you plan to play PoE any seriously."
+    },
+    {
+      "name": "Quality Recipe Calculator",
+      "url": "https://github.com/TehGM/PoE-QualityRecipesCalculator",
+      "category": "PathOfExile",
+      "description": "A very simple tool created by <a href='/members/TehGM'>TehGM</a> that will scan your stash tabs, and calculate any possible combination for Glassblower's Bauble and Gemcutter's Prism vendor recipes. Has option to calculate combinations that result in exactly 40% quality sum, or all combinations that will have minimum 40% quality sum."
+    },
+
+
+    {
+      "name": "Gw2Timer",
+      "url": "http://gw2timer.com/",
+      "category": "GuildWars2",
+      "description": "An interactive map for tracking World Bosses and Meta Events, as well as finding resource nodes and Jumping Puzzles. Also features checklists that reset daily or weekly."
+    }
+  ]
+}
