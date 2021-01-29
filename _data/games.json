@@ -229,5 +229,18 @@
     "members_playing": [
       "TehGM"
     ]
+  },
+  "DysonSphereProgram": {
+    "name": "Dyson Sphere Program",
+    "thumbnail": "/assets/img/games/thumbnails/logo-dysonsphereprogram-01.jpg",
+    "short_description": "A really imperfection-friendly Factorio/Satisfactory style game, with a game changing twist. Ah, science-fictionl always brings good stuff.",
+    "list_global": false,
+
+    "urls": {
+      "steam": "https://store.steampowered.com/app/1366540/Dyson_Sphere_Program/"
+    },
+    "members_playing": [
+      "TehGM"
+    ]
   }
 }
