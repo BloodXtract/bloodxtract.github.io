@@ -81,6 +81,23 @@
       ]
     }
   },
+  "Valheim": {
+    "name": "Valheim",
+    "local_page": "valheim",
+    "thumbnail": "/assets/img/games/thumbnails/logo-valheim-01.png",
+    "short_description": "Valhalla awaits... but until then, we enjoy Valheim.",
+    "list_global": true,
+
+    "urls": {
+      "steam": "https://store.steampowered.com/app/892970/Valheim/",
+      "official": "https://www.valheimgame.com/"
+    },
+    "members_playing": [
+      "TehGM",
+      "BornToLose",
+      "Tajniak"
+    ]
+  },
   "DeepRockGalactic": {
     "name": "Deep Rock Galactic",
     "thumbnail": "/assets/img/games/thumbnails/logo-deeprockgalactic-01.png",
