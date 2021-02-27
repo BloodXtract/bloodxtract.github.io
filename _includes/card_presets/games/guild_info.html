@@ -32,7 +32,7 @@
     <p class="text">You can also contact one of our recruiters:</p>
     {% include recruiters_list.html game_code=include.game_code %}
     {% endif %}
-    {% elsif game.guild.players_inviting.size > 0 %}
+    {% elsif game.guild.recruiters.size > 0 %}
     <p class="text">Feel free to contact one of our recruiters:</p>
     {% include recruiters_list.html game_code=include.game_code %}
     {% else %}
