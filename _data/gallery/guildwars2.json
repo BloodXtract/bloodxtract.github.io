@@ -16,14 +16,14 @@
       "file": "gw001.jpg",
       "title": "Sylvari pilgrimage",
       "description": "<a href='/members/TehGM'>TehGM</a> and <a href='/members/BornToLose'>Born to Lose</a> decided to go for a long walk through Caledon Forest",
-      "tags": [ "TehGM", "BornToLose" ]
+      "tags": [ "BornToLose" ]
     },
     {
       "remote": false,
       "file": "gw008.jpg",
       "title": "Sylvari pilgrimage",
       "description": "<a href='/members/TehGM'>TehGM</a> and <a href='/members/BornToLose'>Born to Lose</a> decided to go for a long walk through Caledon Forest",
-      "tags": [ "TehGM", "BornToLose" ]
+      "tags": [ "BornToLose" ]
     },
     {
       "remote": false,
@@ -34,8 +34,7 @@
     {
       "remote": false,
       "file": "gw046.jpg",
-      "title": "Perfect petrification",
-      "tags": [ "TehGM" ]
+      "title": "Perfect petrification"
     },
     {
       "remote": false,
@@ -45,8 +44,7 @@
       "remote": false,
       "file": "gw078.jpg",
       "title": "Young Karka hunting",
-      "description": "Member: <a href='/members/TehGM'>TehGM</a> as Erevate",
-      "tags": [ "TehGM" ]
+      "description": "Member: <a href='/members/TehGM'>TehGM</a> as Erevate"
     },
     {
       "remote": false,
