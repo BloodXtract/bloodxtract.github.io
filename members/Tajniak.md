@@ -23,7 +23,7 @@ cards_side:
    microphone: Sennheiser E835 
 
 cards_main:
- - preset: games_list
  - preset: related_images
    limit: 9
+ - preset: games_list
 ---
