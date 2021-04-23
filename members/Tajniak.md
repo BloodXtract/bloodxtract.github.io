@@ -18,7 +18,6 @@ cards_side:
     - LG 22MA53 (22", 1080p, 75Hz, 5ms IPS)
     - ACER Nitro VG270UBMIIPX (27", 1440p, 75Hz, 1ms IPS, FreeSync)
    soundcard: Focusrite Scarlet 2i2 3rd Gen
-   networkcard: Killer Wireless 1535
    mouse: Razer Lancehead Tournament Edition
    headset: Audio-Technica ATH-M30 X
    microphone: Sennheiser E835 
