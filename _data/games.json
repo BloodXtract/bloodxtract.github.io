@@ -114,9 +114,9 @@
       "Tajniak"
     ]
   },
-  "WoW": {
+  "WorldOfWarcraft": {
     "name": "World of Warcraft",
-    "local_page": "wow",
+    "local_page": "worldofwarcraft",
     "thumbnail": "/assets/img/games/thumbnails/logo-wow-01.png",
     "short_description": "WoW is kind of an oddity - not many of us play, and even less play it consistently. But we do have characters on both Retail and TBC Classic, so there's that!",
     "list_global": true,
