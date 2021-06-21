@@ -116,7 +116,7 @@
   },
   "WorldOfWarcraft": {
     "name": "World of Warcraft",
-    "local_page": "worldofwarcraft",
+    "local_page": "world-of-warcraft",
     "thumbnail": "/assets/img/games/thumbnails/logo-wow-01.png",
     "short_description": "WoW is kind of an oddity - not many of us play, and even less play it consistently. But we do have characters on both Retail and TBC Classic, so there's that!",
     "list_global": true,
