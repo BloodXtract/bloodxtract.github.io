@@ -67,6 +67,12 @@
       "url": "https://blishhud.com/",
       "category": "GuildWars2",
       "description_include": "blishhud"
+    },
+    {
+      "name": "GW2 Radial",
+      "url": "https://github.com/Friendly0Fire/GW2Radial",
+      "category": "GuildWars2",
+      "description": "A radial menu overlay for Guild Wars 2, allowing quick selection of Mounts, Novelties and even custom menus. <i>This is practically a must-have for mounts selection alone!</i>"
     }
   ]
 }
