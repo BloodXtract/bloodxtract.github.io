@@ -61,6 +61,12 @@
       "url": "https://www.gw2tp.com/",
       "category": "GuildWars2",
       "description": "A trading post website for Guild Wars 2. Allows tracking prices, demand and volume of items on in-game market, both using current and historical data."
+    },
+    {
+      "name": "Blish HUD",
+      "url": "https://blishhud.com/",
+      "category": "GuildWars2",
+      "description_include": "blishhud"
     }
   ]
 }

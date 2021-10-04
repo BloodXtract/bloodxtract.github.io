@@ -36,6 +36,8 @@ subtitle: Tools
                             <td class="key"><a href="{{ tool.url }}">{{ tool.name }}</a></td>
                             {% if tool.description %}
                                 <td class="value">{{ tool.description }}</td>
+                            {% elsif tool.description_include %}
+                                <td class="value">{% include tools/{{ tool.description_include}}.html %}</td>
                             {% endif %}
                         </tr>
                     {% endif %}
