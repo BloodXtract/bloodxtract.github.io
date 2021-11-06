@@ -25,6 +25,7 @@ cards_side:
    networkcard: Killer Wireless 1535
    mouse: Razer Lancehead Tournament Edition
    headset: Corsair HS50
+   keyboard: Razer Lycosa v2
 
 
 cards_main:
