@@ -10,19 +10,18 @@ buy_me_a_coffee_description: Want to support me? Buy me a beer!
 # cards
 cards_side:
  - preset: gaming_rig
-   model: Clevo P775TM1
-   cpu: Intel Core i7 8700K
-   gpu: Nvidia Geforce GTX 1080
-   ram: 4x Crucial Ballistix Sport LT 8GB
+   model: Clevo X170KM-G
+   cpu: Intel Core i9 11900K
+   gpu: Nvidia Geforce RTX 3080
+   ram: 2x Corsair Vengeance CM4X16 8GB
    drive:
     - Samsung EVO 960 500MB
     - Corsair MP510 1TB
-    - Crucial BX500 1TB
-    - HGST HTS72 1TB 7200rpm
+    - Intel 670p BX500 2TB
    monitor:
     - Acer Predator XB271HU (27", 1440p, 165Hz, 4ms IPS, GSYNC)
-    - Clevo P775TM1 Display (17", 1080p, 120Hz, IPS)
-   networkcard: Killer Wireless 1535
+    - Clevo X170KM Display (17", 14400p, 165Hz, IPS, GSYNC)
+   networkcard: Killer Wi-Fi 6 AX1650
    mouse: Razer Lancehead Tournament Edition
    headset: Corsair HS50
    keyboard: Razer Ornata V2
