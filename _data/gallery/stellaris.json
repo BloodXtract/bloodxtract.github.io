@@ -24,7 +24,16 @@
     },
     {
       "remote": true,
+      "file": "https://steamuserimages-a.akamaihd.net/ugc/1863923878441506626/C2BBDE384ABB7ABFA9B5FC028C858EBAE5464A31/"
+    },
+    {
+      "remote": true,
       "file": "https://steamuserimages-a.akamaihd.net/ugc/1635361014314421361/6B1D85C86026E4D00B7E71C9F258A5F6FE2EEFAB/",
+      "description": "Mod: <a href='https://steamcommunity.com/sharedfiles/filedetails/?id=2548912050'>Triglavian Shipset</a>"
+    },
+    {
+      "remote": true,
+      "file": "https://steamuserimages-a.akamaihd.net/ugc/1863923878441506110/9E16808FE0E5364C9EDFFA760DBF71A0D442EB82/",
       "description": "Mod: <a href='https://steamcommunity.com/sharedfiles/filedetails/?id=2548912050'>Triglavian Shipset</a>"
     },
     {
@@ -45,6 +54,18 @@
       "title": "Fusion Suppressor",
       "description": "Mod: <a href='https://steamcommunity.com/sharedfiles/filedetails/?id=1121692237'>Gigastructural Engineering</a>"
     },
+
+    {
+      "remote": true,
+      "file": "https://steamuserimages-a.akamaihd.net/ugc/1863923878441506262/C0F7ACCCA68DD1F7FEA66E659CA2107125941774/",
+      "title": "Dyson Sphere - Stage I (Frame)"
+    },
+    {
+      "remote": true,
+      "file": "https://steamuserimages-a.akamaihd.net/ugc/1863923878441506509/478076C655CFE82BA4394B84095EE17A83E1D87F/",
+      "title": "Dyson Sphere - Stage II"
+    },
+
     {
       "remote": true,
       "file": "https://steamuserimages-a.akamaihd.net/ugc/1771571473859715878/FA18BBAE1A2DC39C7CB24E466D96B1F41BAAD25E/"
