@@ -20,7 +20,7 @@ cards_side:
     - Intel 670p BX500 2TB
    monitor:
     - Acer Predator XB271HU (27", 1440p, 165Hz, 4ms IPS, GSYNC)
-    - Clevo X170KM Display (17", 14400p, 165Hz, IPS, GSYNC)
+    - Clevo X170KM Display (17", 1440p, 165Hz, IPS, GSYNC)
    networkcard: Killer Wi-Fi 6 AX1650
    mouse: Razer Lancehead Tournament Edition
    headset: Corsair HS50
