@@ -13,7 +13,7 @@ cards_side:
    model: Clevo X170KM-G
    cpu: Intel Core i9 11900K
    gpu: Nvidia Geforce RTX 3080
-   ram: 2x Corsair Vengeance CM4X16 8GB
+   ram: 2x Corsair Vengeance CM4X16 16GB
    drive:
     - Samsung EVO 960 500MB
     - Corsair MP510 1TB
