@@ -81,6 +81,20 @@
       ]
     }
   },
+  "ForzaHorizon5": {
+    "name": "Forza Horizon 5",
+    "thumbnail": "/assets/img/games/thumbnails/logo-forza-horizon-5-01.png",
+    "short_description": "One of the more casual racing games, that just does a lot right - especially the graphics!",
+    "list_global": true,
+
+    "urls": {
+      "steam": "https://store.steampowered.com/app/1551360/Forza_Horizon_5/",
+      "official": "https://forzamotorsport.net/en-US/games/fh5"
+    },
+    "members_playing": [
+      "TehGM"
+    ]
+  },
   "Valheim": {
     "name": "Valheim",
     "local_page": "valheim",
