@@ -17,7 +17,7 @@ cards_side:
    drive:
     - Samsung EVO 960 500MB
     - Corsair MP510 1TB
-    - Intel 670p BX500 2TB
+    - Intel 670p 2TB
    monitor:
     - Acer Predator XB271HU (27", 1440p, 165Hz, 4ms IPS, GSYNC)
     - Clevo X170KM Display (17", 1440p, 165Hz, IPS, GSYNC)
