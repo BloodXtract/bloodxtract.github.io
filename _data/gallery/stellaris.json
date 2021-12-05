@@ -8,7 +8,16 @@
   "images": [
     {
       "remote": true,
+      "file": "https://steamuserimages-a.akamaihd.net/ugc/1863924178727078319/6555B66FC1B91F475D4DCDC3638F98E432F29548/"
+    },
+    {
+      "remote": true,
       "file": "https://steamuserimages-a.akamaihd.net/ugc/1635361014314411849/250BE32C305D51273062CF8A9770AD6368A0D139/"
+    },
+    {
+      "remote": true,
+      "file": "https://steamuserimages-a.akamaihd.net/ugc/1863924178727079873/AA15655C873100603E7825D83DA8C0524B9F98BA/",
+      "title": "Megaquasar"
     },
     {
       "remote": true,
@@ -28,6 +37,14 @@
     },
     {
       "remote": true,
+      "file": "https://steamuserimages-a.akamaihd.net/ugc/1863924178727080168/18F853F5A1114E519370D9F5B8CC043891BF55A9/"
+    },
+    {
+      "remote": true,
+      "file": "https://steamuserimages-a.akamaihd.net/ugc/1863924178727079502/AD0DD2541B96BD7D4487AF6A21511C1D3DA68EF4/"
+    },
+    {
+      "remote": true,
       "file": "https://steamuserimages-a.akamaihd.net/ugc/1635361014314421361/6B1D85C86026E4D00B7E71C9F258A5F6FE2EEFAB/",
       "description": "Mod: <a href='https://steamcommunity.com/sharedfiles/filedetails/?id=2548912050'>Triglavian Shipset</a>"
     },
@@ -35,6 +52,12 @@
       "remote": true,
       "file": "https://steamuserimages-a.akamaihd.net/ugc/1863923878441506110/9E16808FE0E5364C9EDFFA760DBF71A0D442EB82/",
       "description": "Mod: <a href='https://steamcommunity.com/sharedfiles/filedetails/?id=2548912050'>Triglavian Shipset</a>"
+    },
+    {
+      "remote": true,
+      "file": "https://steamuserimages-a.akamaihd.net/ugc/1863924178727078948/99ADF868D3841A38555B64393BDFB9F094246449/",
+      "title": "Daivean Domain Valhalla-class flagship",
+      "description": "Mods: <a href='https://steamcommunity.com/sharedfiles/filedetails/?id=2548912050'>Triglavian Shipset</a> and <a href='https://steamcommunity.com/sharedfiles/filedetails/?id=683230077'>NSC2</a>"
     },
     {
       "remote": true,
@@ -54,6 +77,18 @@
       "title": "Fusion Suppressor",
       "description": "Mod: <a href='https://steamcommunity.com/sharedfiles/filedetails/?id=1121692237'>Gigastructural Engineering</a>"
     },
+    {
+      "remote": true,
+      "file": "https://steamuserimages-a.akamaihd.net/ugc/1863924178727079374/58BC0AE52C56BAE5F3B3BFFF7E1295966F1013B6/",
+      "title": "Event Horizon Offset Facility",
+      "description": "Mod: <a href='https://steamcommunity.com/sharedfiles/filedetails/?id=1121692237'>Gigastructural Engineering</a>"
+    },
+    {
+      "remote": true,
+      "file": "https://steamuserimages-a.akamaihd.net/ugc/1863924178727080026/E98CB8B4B759C7AC78AEE87DEBE4C0272F3A2184/",
+      "title": "Event Horizon Offset Facility",
+      "description": "Mod: <a href='https://steamcommunity.com/sharedfiles/filedetails/?id=1121692237'>Gigastructural Engineering</a>"
+    },
 
     {
       "remote": true,
@@ -64,6 +99,21 @@
       "remote": true,
       "file": "https://steamuserimages-a.akamaihd.net/ugc/1863923878441506509/478076C655CFE82BA4394B84095EE17A83E1D87F/",
       "title": "Dyson Sphere - Stage II"
+    },
+    {
+      "remote": true,
+      "file": "https://steamuserimages-a.akamaihd.net/ugc/1863924178727078454/02EB14760F93E85653C88DC789284D1B44FEF1B3/",
+      "title": "Dyson Sphere - Stage III"
+    },
+    {
+      "remote": true,
+      "file": "https://steamuserimages-a.akamaihd.net/ugc/1863924178727078577/40E6896C4AD86111CC8E29678D5443A085FDF7E1/",
+      "title": "Dyson Sphere - Stage IV"
+    },
+    {
+      "remote": true,
+      "file": "https://steamuserimages-a.akamaihd.net/ugc/1863924178727078724/341482C41FDE9387F414AB173B115FE01D08E42A/",
+      "title": "Dyson Sphere - Complete"
     },
 
     {
