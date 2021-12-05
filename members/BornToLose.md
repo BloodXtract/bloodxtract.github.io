@@ -14,7 +14,6 @@ cards_side:
     - Crucial BX500 1TB
     - HGST HTS72 1TB 7200rpm
    monitor:
-    - Acer Predator XB271HU (27", 1440p, 165Hz, 4ms IPS, GSYNC)
     - Clevo P775TM1 Display (17", 1080p, 120Hz, IPS)
    networkcard: Killer Wireless 1535
 
