@@ -16,6 +16,7 @@ cards_side:
    monitor:
     - Clevo P775TM1 Display (17", 1080p, 120Hz, IPS)
    networkcard: Killer Wireless 1535
+   keyboard: Razer Ornata V2
 
 cards_main:
  - preset: related_images

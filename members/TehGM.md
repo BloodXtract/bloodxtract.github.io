@@ -22,7 +22,7 @@ cards_side:
     - Acer Predator XB271HU (27", 1440p, 165Hz, 4ms IPS, GSYNC)
     - Clevo X170KM Display (17", 1440p, 165Hz, IPS, GSYNC)
    networkcard: Killer Wi-Fi 6 AX1650
-   mouse: Razer Lancehead Tournament Edition
+   mouse: Razer Naga Pro
    headset: Corsair HS50
    keyboard: Razer Ornata V2
 
