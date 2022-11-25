@@ -19,6 +19,7 @@ cards_side:
     - ACER Nitro VG270UBMIIPX (27", 1440p, 75Hz, 1ms IPS, FreeSync)
    soundcard: Focusrite Scarlet 2i2 3rd Gen
    mouse: Razer Lancehead Tournament Edition
+   keyboard: Razer Ornata V2
    headset: Audio-Technica ATH-M30 X
    microphone: Sennheiser E835 
 

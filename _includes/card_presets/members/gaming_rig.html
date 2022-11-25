@@ -37,11 +37,11 @@
         <span class="key">RAM:</span>
         <span class="value">
             {% if card.ram.first %}
-                {% for ram in card.ram %}
-                    {% if ram.size > 1 %}&bull; {% endif %}{{ ram }}<br />
-                {% endfor %}
+            {% for ram in card.ram %}
+            {% if ram.size > 1 %}&bull; {% endif %}{{ ram }}<br />
+            {% endfor %}
             {% else %}
-                {{ card.ram }}
+            {{ card.ram }}
             {% endif %}
         </span>
         {{ card.rams.size }}
@@ -52,11 +52,11 @@
         <span class="key">Storage:</span>
         <span class="value">
             {% if card.drive.first %}
-                {% for drive in card.drive %}
-                    {% if card.drive.size != 1 %}&bull; {% endif %}{{ drive }}<br />
-                {% endfor %}
+            {% for drive in card.drive %}
+            {% if card.drive.size != 1 %}&bull; {% endif %}{{ drive }}<br />
+            {% endfor %}
             {% else %}
-                {{ card.drive }}
+            {{ card.drive }}
             {% endif %}
         </span>
     </p>
@@ -66,11 +66,11 @@
         <span class="key">Monitors:</span>
         <span class="value">
             {% if card.monitor.first %}
-                {% for monitor in card.monitor %}
-                    {% if card.monitor.size != 1 %}&bull; {% endif %}{{ monitor }}<br />
-                {% endfor %}
+            {% for monitor in card.monitor %}
+            {% if card.monitor.size != 1 %}&bull; {% endif %}{{ monitor }}<br />
+            {% endfor %}
             {% else %}
-                {{ card.monitor }}
+            {{ card.monitor }}
             {% endif %}
         </span>
     </p>
@@ -99,6 +99,12 @@
         <span class="value">{{ card.mouse }}</span>
     </p>
     {% endif %}
+    {% if card.speaker %}
+    <p class="kvp-item">
+        <span class="key">Speaker:</span>
+        <span class="value">{{ card.speaker }}</span>
+    </p>
+    {% endif %}
     {% if card.headset %}
     <p class="kvp-item">
         <span class="key">Headset:</span>
@@ -109,6 +115,18 @@
     <p class="kvp-item">
         <span class="key">Microphone:</span>
         <span class="value">{{ card.microphone }}</span>
+    </p>
+    {% endif %}
+    {% if card.mousepad %}
+    <p class="kvp-item">
+        <span class="key">Mousepad:</span>
+        <span class="value">{{ card.mousepad }}</span>
+    </p>
+    {% endif %}
+    {% if card.desk %}
+    <p class="kvp-item">
+        <span class="key">Desk:</span>
+        <span class="value">{{ card.desk }}</span>
     </p>
     {% endif %}
 </div>

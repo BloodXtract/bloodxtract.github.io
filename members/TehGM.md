@@ -23,9 +23,10 @@ cards_side:
     - Clevo X170KM Display (17", 1440p, 165Hz, IPS, GSYNC)
    networkcard: Killer Wi-Fi 6 AX1650
    mouse: Razer Naga Pro
-   headset: Corsair HS50
+   headset: Corsair HS60
    keyboard: Razer Ornata V2
-
+   speaker: Razer Leviathan V2 (with Subwoofer)
+   mousepad: Razer Goliathus Chroma
 
 cards_main:
  - preset: related_images

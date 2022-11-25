@@ -17,6 +17,7 @@ cards_side:
     - Clevo P775TM1 Display (17", 1080p, 120Hz, IPS)
    networkcard: Killer Wireless 1535
    keyboard: Razer Ornata V2
+   mouse: MIONIX Naos QG
 
 cards_main:
  - preset: related_images
